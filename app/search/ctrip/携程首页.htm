@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta http-equiv="X-UA-Compatible" content="IE=10">
+		
+		<title>携程旅行网官网:酒店预订,机票预订查询,旅游度假,商旅管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="携程旅行网是中国领先的在线旅行服务公司，向超过1400万会员提供集酒店预订、机票预订、度假预订、商旅管理、特惠商户及旅游资讯在内的全方位旅行服务。">
+		<meta name="keywords" content="酒店预订,机票预订,旅游度假,商旅管理,酒店预订,机票预订,航班查询,电子客票,机票,酒店,旅行">
+		<meta property="qc:admins" content="14674104326342106375">
+		<link href="./携程首页_files/private_index_v3_20130322.css" rel="stylesheet" type="text/css" media="all">
+		<style id="headStyleId" type="text/css" media="all">
+		.cui_nav li[id]:hover .cui_subnav_wrap{display:block;}
+		.cui_nav li[id]:hover .cui_subnav_wrap{z-index:10;}
+		</style>
+		
+	</head>
+
+	<body youdao="bind">
+		
+	<div class="cui_hd_cont">
+		<div class="cui_hd" id="cui_hd">
+			
+			<div class="ctriplogo"><a href="http://www.ctrip.com/" title="携程旅行网">携程旅行网</a></div>
+			
+			<div class="cui_toolkit">
+				<a class="cui_lang_en" href="http://english.ctrip.com/" rel="nofollow">English</a>
+				|		
+				<div class="cui_lang" onmouseover="this.className=&#39;cui_lang cui_lang_hover&#39;" onmouseout="this.className=&#39;cui_lang&#39;">
+					<b></b>
+					<div class="cui_lang_list">
+						<a class="cui_lang_gb" title="中国旅行" href="http://www.ctrip.com/">简体版</a>
+						<a href="http://big5.ctrip.com/" class="cui_lang_big5" rel="nofollow">繁体版</a>
+						<a class="cui_lang_jap" title="中国旅行" href="http://jp.ctrip.com/" rel="nofollow">日语版</a>
+						<a class="cui_lang_korea" title="中国旅行" href="http://kr.ctrip.com/" rel="nofollow">韩语版</a>
+						<a href="http://de.ctrip.com/" title="China Reisen" class="cui_lang_de" rel="nofollow">Deutsch</a>
+						<a href="http://fr.ctrip.com/" title="Chine Voyage" class="cui_lang_fr" rel="nofollow">Fran&#231;ais</a>
+						<a href="http://es.ctrip.com/" title="Viajar a China" class="cui_lang_es" rel="nofollow">Espa&#241;ol</a>
+						<a href="http://ru.ctrip.com/" title="Ездить в Китай" class="cui_lang_ru" rel="nofollow">Русский</a>
+					</div>
+				</div>
+				<a href="http://kefu.ctrip.com/" rel="nofollow" class="cui_help">客服中心</a>
+				|
+			</div>
+			
+			<div class="cui_tel" onmouseover="this.className=&#39;cui_tel cui_tel_hover&#39;" onmouseout="this.className=&#39;cui_tel&#39;" onclick="this.className=&#39;cui_tel cui_tel_hover&#39;">
+				<b></b>
+				<span class="cui_tel_in" title="免境内长话费">国内：<i>1010-6666</i></span>
+				<div class="cui_tel_more">
+					<span class="cui_tel_in">国内：<i>800-820-6666</i></span>
+					<span class="cui_tel_in">香港：<i>852-3610-6666</i></span>
+					<span class="cui_tel_in">海外：<i>+86-21-3406-4888</i></span>
+				</div>
+			</div>
+			
+			<div class="cui_wireless"><a href="http://shouji.ctrip.com/">携程无线</a></div>
+			
+			<b class="cui_ico_sale"></b>
+		</div>
+	</div>
+	
+	
+	<div id="cui_nav" class="cui_nav_single">
+		<div class="base_nav">
+			<ul class="cui_nav">
+				<li id="cui_nav_home" class="cui_nav_current">
+					<a href="" class="cui_nav_non"><span>首页</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_hotel">
+					<a href="http://hotels.ctrip.com/" class="cui_nav_hotel cui_nav_has"><span>酒店</span><i class="cui_ico_triangle"></i></a>
+					<div class="cui_subnav_wrap"><div class="cui_sub_nav"><a href="">国内酒店</a>|<a href="">海外酒店</a>|<a href="">惠选酒店</a>|<a href="">机+酒</a>|<a href="">团购</a>|<a href="">特价超市</a></div></div>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_vac">
+					<a href="http://vacations.ctrip.com/" class="cui_nav_vac cui_nav_has"><span>旅游</span><i class="cui_ico_triangle"></i></a>
+					<div class="cui_subnav_wrap"><div class="cui_sub_nav"><a href="">旅游首页</a>|<a href="">国内旅游</a>|<a href="">出境旅游</a>|<a href="">周边/当地游</a>|<a href="">邮轮</a>|<a href="">门票</a>|<a href="">租车</a>|<a href="">游学<span class="cui_ico_new"></span></a>|<a href="">签证</a>|<a href="">欧铁</a>|<a href="">旅游攻略</a>|<a href="">包团定制</a>|<a href="">鸿鹄逸游</a></div></div>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_flight">
+					<a href="http://flights.ctrip.com/" class="cui_nav_flight cui_nav_has"><span>机票</span><i class="cui_ico_triangle"></i></a>
+					<div class="cui_subnav_wrap"><div class="cui_sub_nav"><a href="">国内机票</a>|<a href="">国际机票</a>|<a href="">机+酒</a></div></div>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_trains">
+					<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" class="cui_nav_non"><span>火车</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_tuan">
+					<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" class="cui_nav_non"><span>团购</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_destination">
+					<a href="" class="cui_nav_non"><span>攻略社区</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_lpk">
+					<a href="" class="cui_nav_non"><span>礼品卡</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_sl">
+					<a href="" class="cui_nav_non"><span>商旅</span></a>
+				</li>
+				<li class="sep"></li>
+				<li id="cui_nav_more">
+					<a href="javascript:void(0);" class="cui_nav_more cui_nav_has"><span>更多</span><i class="cui_ico_triangle"></i></a>
+					<div class="cui_subnav_wrap"><div class="cui_sub_nav"><a href="" rel="nofollow">积分奖励</a>|<a href="" rel="nofollow">特卖汇</a>|<a href="" rel="nofollow">合作卡</a>|<a href="" rel="nofollow">订餐</a></div></div>
+				</li>
+				<li class="cui_myctrip cui_myctrip_hover">
+					
+					<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" class="cui_myctrip_status">我的携程</a>
+					<div class="cui_myctrip_username">携程旅行网测试用户</div>
+					
+					<b class="b_h"></b>
+					<div class="cui_myctrip_lr">
+						<a href="" class="cui_links_login">登录</a>|<a href="" class="cui_links_reg">注册</a>
+					</div>
+					<a href="" class="cui_links_exit">退出</a>
+					<a href="" class="cui_links_msg">(1)</a>
+					
+					<div class="cui_account">
+						<input type="button" class="basebtns_01" value="登录"><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" rel="nofollow">我的携程首页</a>
+						<div class="cui_account_info">
+							<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" rel="nofollow">机票订单</a>
+							<a href="" rel="nofollow">酒店订单</a>
+							<a href="" rel="nofollow">旅游度假订单</a>
+							<a href="" rel="nofollow">其它订单</a>
+							<a href="" rel="nofollow">非会员订单</a>
+						</div>
+						<div class="cui_account_info">
+							<a href="" rel="nofollow">个人账户</a>
+							<a href="" rel="nofollow">我的积分</a>
+							<a href="" rel="nofollow">我的票券</a>
+							<a href="" rel="nofollow">我的点评</a>
+						</div>
+					</div>
+					
+					<div class="cui_account">
+						<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">我的携程首页</a>
+						<p class="cui_myctrip_orders">
+							<a href="">未提交订单</a>
+							<a href="">未出行订单</a>
+							<a href="">待点评订单</a>
+						</p>
+						<div class="cui_account_info">
+							<a href="" rel="nofollow">机票订单</a>
+							<a href="" rel="nofollow">酒店订单</a>
+							<a href="" rel="nofollow">旅游度假订单</a>
+							<a href="" rel="nofollow">其它订单</a>
+						</div>
+						<div class="cui_account_info">
+							<a href="" rel="nofollow">个人账户</a>
+							<a href="" rel="nofollow">我的积分</a>
+							<a href="" rel="nofollow">我的票券</a>
+							<a href="" rel="nofollow">我的点评</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+			
+		
+		
+		<div id="cui_bd" class="cui_bd">
+			<div class="bd_row">
+				
+				<div id="searchBox" class="searchbox searchbox_animate">
+					<ul class="s_tab searchbox_animate" id="searchBoxUl">
+						<li class="s_tab_nocurrent" data-index="0">酒店</li>
+						<li class="s_tab_nocurrent" data-index="1">机票</li>
+						<li class="s_tab_current" data-index="2" styletag="free">自由行<span class="cui_ico_new"></span></li>
+						<li class="s_tab_nocurrent" data-index="3">旅游</li>
+						<li class="s_tab_nocurrent" data-index="4">火车</li>
+						
+						<li class="s_tab_nocurrent" data-index="5">门票</li>
+						
+						<li class="s_tab_nocurrent" data-index="6">攻略</li>
+					</ul>
+					
+					<div class="s_content searchbox_animate" style="display:none;">
+						<p class="s_subtab_a" id="hotelSwitch">
+							<a href="javascript:void(0);" class="current" data-index="0">国内酒店</a>
+							<a href="javascript:void(0);" data-index="1">海外酒店</a>
+						</p>
+						
+						<form id="chinaHotelForm" action="http://hotels.ctrip.com/Domestic/ShowHotelList.aspx" method="post" name="hotelForm" onsubmit="return false;" interhotelaction="http://hotels.ctrip.com" twhotelaction="http://hotels.ctrip.com/international/ShowHotelList.aspx">
+							<div class="s_item_cont">
+								
+								
+								<div class="s_item w05">入住城市<input type="text" value="中文/拼音" class="w06" name="cityname" autocomplete="off" id="cityname"></div>
+								<div class="s_item_hotel">
+									
+									<a class="s_history_btn" href="javascript:;" onclick="this.className=&#39;s_history_btn s_history_btn_hover&#39;;document.getElementById(&#39;history_list&#39;).style.display=&#39;block&#39;"><i></i>搜索历史</a>
+									<div class="history_list" id="history_list">
+										<a href="javascript:;"><span class="city">上海</span><span class="date">2013-05-29 至 2013-05-30</span></a>
+										<a class="item_hover" href="javascript:;"><span class="city">乌鲁木齐</span><span class="date">2013-05-29 至 2013-05-30</span></a>
+										<a class="item_past" href="javascript:;"><span class="city">哈尔滨</span><span class="date">2013-05-29 至 2013-05-30</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">入住日期<input type="text" value="yyyy-mm-dd" id="starttime" name="checkIn" autocomplete="off"></div>
+								<div class="s_item2">退房日期<input type="text" value="yyyy-mm-dd" id="deptime" name="checkOut" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">酒店级别<select>
+										<option selected="selected" value="0">不限</option>
+										<option value="5">五星级/豪华</option>
+										<option value="4">四星级/高档</option>
+										<option value="3">三星级/舒适</option>
+										<option value="2">二星级以下/经济</option>
+									</select>
+								</div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item w100">关键词<input type="text" value="（选填）酒店名/地标/商圈" id="deptime" name="checkOut" class="w01" autocomplete="off"></div>
+								
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="地图搜索" class="cui_btn_map" title="地图搜索" id="submit1" name="submit11">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit1" name="submit1">
+								
+							</div>
+						</form>
+						
+						<form id="inteHotelForm" action="http://hotels.ctrip.com/Domestic/ShowHotelList.aspx" method="post" name="hotelForm" onsubmit="return false;" interhotelaction="http://hotels.ctrip.com" twhotelaction="http://hotels.ctrip.com/international/ShowHotelList.aspx" style="display:none;">
+							<div class="s_item_cont">
+								<div class="s_item w100">入住城市<input type="text" value="中文/英文/拼音" id="cityname" class="w01" name="cityname" autocomplete="off">
+								</div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">入住日期<input type="text" value="yyyy-mm-dd" id="starttime" name="checkIn" autocomplete="off"></div>
+								<div class="s_item2">退房日期<input type="text" value="yyyy-mm-dd" id="deptime" name="checkOut" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item w100">酒店名称<input type="text" value="（选填）中文/英文" id="deptime" name="checkOut" class="w01" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">预订间数<select>
+										<option selected="selected" value="0">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit1" name="submit1">
+								
+							</div>
+						</form>
+					</div>
+										
+					<div class="s_content searchbox_animate" style="display:none;">			
+						<p class="s_subtab_a" id="flightSwitch">
+							<a href="javascript:void(0);" data-index="0" class="current" tag="fltDomestic" faction="http://flights.ctrip.com/booking/">国内机票</a>
+							<a href="javascript:void(0);" data-index="2" tag="fltInternational" faction="http://flights.ctrip.com/International/ShowFareFirst.aspx">国际机票</a>
+						</p>
+						
+						<form id="flightForm" action="" method="GET" onsubmit="return false;" style="display:none&#39;">
+							<p class="s_type" id="flightSubSwitch">航程类型<label class="index_label" data-index="0"><input name="flightway" type="radio" value="Single" checked="checked">单程</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">往返</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">联程</label><span class="s_voyage_tip"></span></p>
+							<div class="s_item_cont s_item_cont_ex">
+								<div class="s_exchange"><a href="javascript:;">换</a></div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">到达城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2 s_disable">返回日期<input type="text" value="2013-04-25" autocomplete="off"></div>
+							</div>
+
+							<div id="s_options_flt_in" class="s_options">
+								<div class="s_item_cont">
+									<div class="s_item">出行人数<select>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="大于9">大于9</option>
+										</select>
+									</div>
+									<div id="flt_dom_options" class="s_item2">
+										航空公司<select name="Filter" id="AirlineSelect">
+											<option value="">不限</option>
+											<option value="airline:CA">中国国航-CA</option>
+											<option value="airline:CZ">南方航空-CZ</option>
+											<option value="airline:MU">东方航空-MU</option>
+											<option value="">---------------------------</option>
+											<option value="airline:BK">A-奥凯航空公司-BK</option>
+											<option value="airline:JD">B-北京首都航空有限公司-JD</option>
+											<option value="airline:EU">C-成都航空有限公司-EU</option>
+											<option value="airline:CN">D-大新华航空公司-CN</option>
+											<option value="airline:NS">H-河北航空公司-NS</option>
+											<option value="airline:HU">H-海南航空公司-HU</option>
+											<option value="airline:VD">H-河南航空有限公司-VD</option>
+											<option value="airline:G5">H-华夏航空公司-G5</option>
+											<option value="airline:HO">J-吉祥航空公司-HO</option>
+											<option value="airline:KY">K-昆明航空有限公司-KY</option>
+											<option value="airline:3U">S-四川航空公司-3U</option>
+											<option value="airline:SC">S-山东航空公司-SC</option>
+											<option value="airline:ZH">S-深圳航空公司-ZH</option>
+											<option value="airline:FM">S-上海航空公司-FM</option>
+											<option value="airline:GS">T-天津航空有限责任公司-GS</option>
+											<option value="airline:PN">X-西部航空公司-PN</option>
+											<option value="airline:JR">X-幸福航空有限责任公司-JR</option>
+											<option value="airline:MF">X-厦门航空有限公司-MF</option>
+											<option value="airline:8L">X-祥鹏航空公司-8L</option>
+											<option value="airline:KN">Z-中国联合航空公司-KN</option>
+										</select>
+									</div>
+								</div>
+								<div class="s_item_cont">
+									<div class="s_item">送票城市<input type="text" value="（选填）中文/拼音"></div>
+									<input type="hidden" id="intFlightCookie" value="上海">
+									<input type="hidden" id="flightCookie" value="上海">
+									<div class="s_item2">舱位等级<select name="ClassType" id="cangweiId">
+											<option value="">经济舱</option>
+											<option value="CF">公务/头等舱</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="s_item_cont"><a href="javascript:;" onclick="document.getElementById(&#39;searchBox&#39;).className=&#39;searchbox searchbox_flt_in searchbox_animate&#39;;this.className=&#39;s_high_level s_high_level_hover&#39;;document.getElementById(&#39;s_options_flt_in&#39;).style.display=&#39;block&#39;;" class="s_high_level"><i></i>高级搜索</a></div>
+							<div class="s_button_area">
+																
+								
+								<input type="submit" value="搜索机+酒" class="cui_btn_pkg" title="搜索机+酒" id="submit2">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit2">
+							</div>
+						</form>
+						
+						<form id="flightForm2" action="" method="GET" onsubmit="return false;" style="display:none;">	
+							<p class="s_type" id="flightSubSwitch">航程类型<label class="index_label" data-index="0"><input name="flightway" type="radio" value="Single">单程</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">往返</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double" checked="checked">联程</label><span class="s_voyage_tip"></span></p>
+							<div class="s_item_cont">
+								<div class="s_item">出发城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">第1程日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">中转城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">第2程日期<input type="text" value="2013-04-25" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">到达城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+							</div>
+
+							<div id="s_options_flt_in_2" class="s_options">
+								<div class="s_item_cont">
+									<div class="s_item">出行人数<select>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="大于9">大于9</option>
+										</select>
+									</div>
+									<div id="flt_dom_options" class="s_item2">
+										航空公司<select name="Filter" id="AirlineSelect">
+											<option value="">不限</option>
+											<option value="airline:CA">中国国航-CA</option>
+											<option value="airline:CZ">南方航空-CZ</option>
+											<option value="airline:MU">东方航空-MU</option>
+											<option value="">---------------------------</option>
+											<option value="airline:BK">A-奥凯航空公司-BK</option>
+											<option value="airline:JD">B-北京首都航空有限公司-JD</option>
+											<option value="airline:EU">C-成都航空有限公司-EU</option>
+											<option value="airline:CN">D-大新华航空公司-CN</option>
+											<option value="airline:NS">H-河北航空公司-NS</option>
+											<option value="airline:HU">H-海南航空公司-HU</option>
+											<option value="airline:VD">H-河南航空有限公司-VD</option>
+											<option value="airline:G5">H-华夏航空公司-G5</option>
+											<option value="airline:HO">J-吉祥航空公司-HO</option>
+											<option value="airline:KY">K-昆明航空有限公司-KY</option>
+											<option value="airline:3U">S-四川航空公司-3U</option>
+											<option value="airline:SC">S-山东航空公司-SC</option>
+											<option value="airline:ZH">S-深圳航空公司-ZH</option>
+											<option value="airline:FM">S-上海航空公司-FM</option>
+											<option value="airline:GS">T-天津航空有限责任公司-GS</option>
+											<option value="airline:PN">X-西部航空公司-PN</option>
+											<option value="airline:JR">X-幸福航空有限责任公司-JR</option>
+											<option value="airline:MF">X-厦门航空有限公司-MF</option>
+											<option value="airline:8L">X-祥鹏航空公司-8L</option>
+											<option value="airline:KN">Z-中国联合航空公司-KN</option>
+										</select>
+									</div>
+								</div>
+								<div class="s_item_cont">
+									<div class="s_item">送票城市<input type="text" value="（选填）中文/拼音"></div>
+									<input type="hidden" id="intFlightCookie" value="上海">
+									<input type="hidden" id="flightCookie" value="上海">
+									<div class="s_item2">舱位等级<select name="ClassType" id="cangweiId">
+											<option value="">经济舱</option>
+											<option value="CF">公务/头等舱</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="s_item_cont"><a href="javascript:;" onclick="document.getElementById(&#39;searchBox&#39;).className=&#39;searchbox searchbox_animate searchbox_flt_in_connect&#39;;this.className=&#39;s_high_level s_high_level_hover&#39;;document.getElementById(&#39;s_options_flt_in_2&#39;).style.display=&#39;block&#39;;" class="s_high_level"><i></i>高级搜索</a></div>
+							<div class="s_button_area">
+																
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit2">
+							</div>
+						</form>
+						
+						<form id="flightForm3" action="" method="GET" onsubmit="return false;" style="display:none">	
+							<p class="s_type" id="flightSubSwitch">航程类型<label class="index_label" data-index="0"><input name="flightway" type="radio" value="Single" checked="checked">单程</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">往返</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">多程（含缺口程）</label><span class="s_voyage_tip"></span></p>
+							<div class="s_item_cont s_item_cont_ex">
+								<div class="s_exchange"><a href="javascript:;">换</a></div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音/英文" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">到达城市<input type="text" value="中文/拼音/英文" autocomplete="off"></div>
+								<div class="s_item2">返回日期<input type="text" value="2013-04-25" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">
+									<div class="s_item_direct"><label class="index_label"><input type="checkbox">仅查看直飞</label></div>
+								</div>
+							</div>
+							<div id="s_options_flt_in_3" class="s_options">
+								<div class="s_item_cont">
+									<div class="s_item">出行人数<select>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="大于9">大于9</option>
+										</select>
+									</div>
+									<div class="s_item2">
+										航空公司<input type="text" value="（选填）中英文/代码">
+									</div>
+								</div>
+								<div class="s_item_cont">
+									<div class="s_item">
+										乘客类型<select name="ClassType" id="cangweiId">
+											<option value="">成人</option>
+											<option value="">儿童(2-12岁)</option>
+										</select>
+									</div>
+									<div class="s_item2">舱位等级<select name="ClassType" id="cangweiId">
+											<option selected="selected" value="Y">经济舱</option>
+											<option value="S">超级经济舱</option>
+											<option value="C">公务舱</option>
+											<option value="F">头等舱</option>
+										</select>
+									</div>
+								</div>
+								<div class="s_flt_child_tip">无成人陪伴的儿童请直接向航空公司预订</div>
+							</div>
+							<div class="s_item_cont"><a href="javascript:;" onclick="document.getElementById(&#39;searchBox&#39;).className=&#39;searchbox searchbox_flt_out searchbox_animate&#39;;this.className=&#39;s_high_level s_high_level_hover&#39;;document.getElementById(&#39;s_options_flt_in_3&#39;).style.display=&#39;block&#39;;" class="s_high_level"><i></i>高级搜索</a></div>
+							<div class="s_button_area">
+												
+								<input type="submit" value="搜索机+酒" class="cui_btn_pkg" title="搜索机+酒">				
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit2">
+							</div>
+						</form>
+						
+						<form id="flightForm4" action="" method="GET" onsubmit="return false;" style="display:none">	
+							<p class="s_type" id="flightSubSwitch"><label class="index_label" data-index="0"><input name="flightway" type="radio" value="Single">单程</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double">往返</label>&nbsp;<label class="index_label" data-index="1"><input name="flightway" type="radio" value="Double" checked="checked">多程（含缺口程）</label><span class="s_voyage_tip"></span></p>
+							<div class="s_item_cont">
+								<div class="s_item_voyage">1</div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+								<div class="s_item2">到达城市<input type="text" value="2013-04-24" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item_voyage">2</div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+								<div class="s_item2">到达城市<input type="text" value="2013-04-24" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item_voyage">3</div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="2013-04-24" autocomplete="off"></div>
+								<div class="s_item2">到达城市<input type="text" value="2013-04-24" autocomplete="off"></div>
+								<a class="s_item_del" href="javascript:;"></a>
+							</div>
+							
+							<div class="s_add_voyage"><i></i><a href="javascript:;">添加航程</a></div>
+							<div id="s_options_flt_in_4" class="s_options">
+								<div class="s_item_cont">
+									<div class="s_item">出行人数<select>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="大于9">大于9</option>
+										</select>
+									</div>
+									<div class="s_item2">
+										乘客类型<select>
+											<option value="">成人</option>
+											<option value="airline:CA">儿童（2-12岁）</option>
+										</select>
+									</div>
+									<div class="s_item2">舱位等级<select name="ClassType" id="cangweiId">
+											<option selected="selected" value="Y">经济舱</option>
+											<option value="S">超级经济舱</option>
+											<option value="C">公务舱</option>
+											<option value="F">头等舱</option>
+										</select>
+									</div>
+								</div>
+								<div class="s_flt_child_tip">无成人陪伴的儿童请直接向航空公司预订</div>
+							</div>
+							<div class="s_item_cont"><a href="javascript:;" onclick="document.getElementById(&#39;searchBox&#39;).className=&#39;searchbox searchbox_animate searchbox_flt_out_connect&#39;;this.className=&#39;s_high_level s_high_level_hover&#39;;document.getElementById(&#39;s_options_flt_in_4&#39;).style.display=&#39;block&#39;;" class="s_high_level"><i></i>高级搜索</a></div>
+							<div class="s_button_area">
+									
+								<input type="submit" value="搜索" class="s_btn_disabled" title="搜索" disabled="disabled" id="submit2">
+							</div>
+						</form>
+					</div>
+					
+					<div id="FHX_container" class="s_content searchbox_animate" style="display:block;">
+						<form method="post" id="FHX_form">
+							<div class="s_item_cont">
+								<div class="s_item">成人
+									<select name="Adults" id="FHX_AdultSelect" value="2" data-default="2">
+										<option value="1">1成人</option>
+										<option value="2">2成人</option>
+										<option value="3">3成人</option>
+										<option value="4">4成人</option>
+										<option value="5">5成人</option>
+										<option value="6">6成人</option>
+										<option value="7">7成人</option>
+										<option value="8">8成人</option>
+										<option value="9">9成人</option>
+									</select></div>
+								<div class="s_item2">儿童
+									<select name="Children" id="FHX_ChildrenSelect" value="1" data-default="0">
+										<option value="0">0儿童(2-12岁)</option>
+										<option value="1">1儿童(2-12岁)</option>
+										<option value="2">2儿童(2-12岁)</option>
+										<option value="3">3儿童(2-12岁)</option>
+										<option value="4">4儿童(2-12岁)</option>
+										<option value="5">5儿童(2-12岁)</option>
+										<option value="6">6儿童(2-12岁)</option>	
+									</select></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">出发城市<input tabindex="1" type="text" autocomplete="off" id="FHX_txtFrom" name="FromCityName"/></div>
+								<div class="s_item2">出发日期<input tabindex="3" type="text" autocomplete="off" id="FHX_txtFromDate" name="FromTime" readonly="readonly"/></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">到达城市<input tabindex="2" type="text" autocomplete="off" id="FHX_txtTo" name="ToCityName" /></div>
+								<div class="s_item2">返回日期<input tabindex="4" type="text" autocomplete="off" id="FHX_txtToDate" name="ToTime" readonly="readonly"/></div>
+							</div>
+							<div id="FHX_divHotelQuery" class="s_item_cont" style="height:auto;line-height:auto;">
+								<div class="s_item_cont">
+									<div class="s_item w100">
+										酒店<input type="text" autocomplete="off" class="w07" tabindex="4"/><input type="hidden" name="ToCities"/><input type="hidden" name="citypy"/><input type="text" autocomplete="off" class="w08" name="CheckInDate" readonly="readonly"/><input type="text" autocomplete="off" class="w08" name="CheckOutDate" readonly="readonly"/>
+									</div>
+									<a href="javascript:;" data-index="0" class="s_item_del fr hidden"></a>
+								</div>
+							</div>
+						
+							<div class="s_add_voyage" style="margin:5px 0 0 66px;"  id="FHX_lnkAddHotel"><i></i><a href="javascript:;">添加酒店</a></div>
+							<div class="s_button_area">
+								<input type="button" value="搜索机票+酒店套餐" class="s_btn s_btn2" title="搜索机票+酒店套餐" id="FHX_btnSearch">
+							</div>
+							<input type="hidden" name="FromCity" value="" id="FHX_hFromID" />
+							<input type="hidden" name="ToCity" value="" id="FHX_hToID" />
+							<input type="hidden" name="FromCityEName" id="FHX_hFromPY" value="" />
+							<input type="hidden" name="ToCityEName" id="FHX_hToPY" value="" />
+						</form>
+						
+					</div>
+					
+					<div class="s_content searchbox_animate" style="display:none;">
+						<div id="pkgStartCityDiv" class="departures" style="display:none ;">
+							<h5>热门出发城市</h5>
+							<a title="Beijing" href="javascript:void(0);">北京</a>
+							<a title="Shanghai" href="javascript:void(0);">上海</a>
+							<a title="Guangzhou" href="javascript:void(0);">广州</a>
+							<a title="Shenzhen" href="javascript:void(0);">深圳</a>
+							<a title="Nanjing" href="javascript:void(0);">南京</a>
+							<a title="Hangzhou" href="javascript:void(0);">杭州</a>
+							<a title="Chengdu" href="javascript:void(0);">成都</a>
+							<a title="Xiamen" href="javascript:void(0);">厦门</a>
+							<a title="Wuhan" href="javascript:void(0);">武汉</a>
+							<a title="Qingdao" href="javascript:void(0);">青岛</a>
+							<a title="Shenyang" href="javascript:void(0);">沈阳</a>
+							<a title="Tianjin" href="javascript:void(0);">天津</a>
+							<ul class="departures_sequence">
+								<li><span>B</span><a href="javascript:void(0);" title="Beijing">北京</a><a href="javascript:void(0);" title="Baotou">包头</a></li>
+								<li><span>M</span><a href="javascript:void(0);" title="Mianyang">绵阳</a></li>
+								<li><span>C</span><a href="javascript:void(0);" title="Chongqing">重庆</a><a href="javascript:void(0);" title="Chengdu">成都</a><a href="javascript:void(0);" title="Changchun">长春</a><a href="javascript:void(0);" title="Changsha">长沙</a><a href="javascript:void(0);" title="Changzhou">常州</a></li>
+								<li><span>N</span><a href="javascript:void(0);" title="Nanjing">南京</a><a href="javascript:void(0);" title="Nantong">南通</a><a href="javascript:void(0);" title="Ningbo">宁波</a><a href="javascript:void(0);" title="Nanchang">南昌</a><a href="javascript:void(0);" title="Nanning">南宁</a></li>
+								<li><span>D</span><a href="javascript:void(0);" title="Dalian">大连</a><a href="javascript:void(0);" title="Dongguan">东莞</a></li>
+								<li><span>Q</span><a href="javascript:void(0);" title="Qingdao">青岛</a><a href="javascript:void(0);" title="Quanzhou">泉州</a></li>
+								<li><span>F</span><a href="javascript:void(0);" title="Foshan">佛山</a><a href="javascript:void(0);" title="Fuzhou">福州</a></li>
+								<li><span>S</span><a href="javascript:void(0);" title="Shanghai">上海</a><a href="javascript:void(0);" title="Suzhou">苏州</a><a href="javascript:void(0);" title="Shenzhen">深圳</a><a href="javascript:void(0);" title="Sanya">三亚</a><a href="javascript:void(0);" title="Shijiazhuang">石家庄</a><a href="javascript:void(0);" title="Shantou">汕头</a><a href="javascript:void(0);" title="Shenyang">沈阳</a></li>
+								<li><span>G</span><a href="javascript:void(0);" title="Guangzhou">广州</a><a href="javascript:void(0);" title="Guiyang">贵阳</a></li>
+								<li><span>T</span><a href="javascript:void(0);" title="Tianjin">天津</a><a href="javascript:void(0);" title="Taiyuan">太原</a><a href="javascript:void(0);" title="Taizhou">台州</a></li>
+								<li><span>H</span><a href="javascript:void(0);" title="Haerbin">哈尔滨</a><a href="javascript:void(0);" title="Hangzhou">杭州</a><a href="javascript:void(0);" title="Haikou">海口</a><a href="javascript:void(0);" title="Huhehaote">呼和浩特</a><a href="javascript:void(0);" title="Hailaer">海拉尔</a><a href="javascript:void(0);" title="Hefei">合肥</a></li>
+								<li><span>W</span><a href="javascript:void(0);" title="Wuxi">无锡</a><a href="javascript:void(0);" title="Wulumuqi">乌鲁木齐</a><a href="javascript:void(0);" title="Wuhan">武汉</a><a href="javascript:void(0);" title="Weihai">威海</a><a href="javascript:void(0);" title="Wenzhou">温州</a></li>
+								<li><span>J</span><a href="javascript:void(0);" title="Jinan">济南</a><a href="javascript:void(0);" title="Jiangmen">江门</a></li>
+								<li><span>X</span><a href="javascript:void(0);" title="Xian">西安</a><a href="javascript:void(0);" title="Xiamen">厦门</a><a href="javascript:void(0);" title="Xining">西宁</a><a href="javascript:void(0);" title="Xichang">西昌</a><a href="javascript:void(0);" title="Xuzhou">徐州</a></li>
+								<li><span>K</span><a href="javascript:void(0);" title="Kunming">昆明</a><a href="javascript:void(0);" title="Kashishi">喀什市</a></li>
+								<li><span>Y</span><a href="javascript:void(0);" title="Yinchuan">银川</a><a href="javascript:void(0);" title="Yuncheng">运城</a><a href="javascript:void(0);" title="Yanji">延吉</a><a href="javascript:void(0);" title="Yulin">榆林</a></li>
+								<li><span>L</span><a href="javascript:void(0);" title="Lijiang">丽江</a><a href="javascript:void(0);" title="Lasa">拉萨</a><a href="javascript:void(0);" title="Lanzhou">兰州</a></li>
+								<li><span>Z</span><a href="javascript:void(0);" title="Zhuhai">珠海</a><a href="javascript:void(0);" title="Zhongshan">中山</a><a href="javascript:void(0);" title="Zhengzhou">郑州</a></li>
+							</ul>
+						</div>
+						<form id="pkgSearch" name="packageForm" action="http://vacations.ctrip.com/booking/IndexSearch.ashx" method="post" onsubmit="return false;">
+							<div class="s_links">
+								<p><span>主题：</span><a href="">摄影</a><a href="">温泉</a><a href="">购物</a><a href="">海岛</a><a href="">自驾游</a><a href="">登山</a><a href="">古镇</a><a href="">乐园</a><a href="">蜜月</a></p>
+								<p><span>国内：</span><a href="">海南</a><a href="">厦门</a><a href="">云南</a><a href="">广西贵州</a><a href="">四川</a><a href="">青岛</a><a href="">张家界</a><a href="">宜昌</a><a href="">西安</a></p>
+								<p><span>出境：</span><a href="">港澳台</a><a href="">日本</a><a href="">韩国</a><a href="">美国</a><a href="">东南亚</a><a href="">大洋洲</a><a href="">美洲</a><a href="">中东非洲</a><a href="">欧洲</a></p>
+								<p><span>特色：</span><a href="">签证</a><a href="">租车服务</a><a href="">当地游</a><a href="">邮轮</a><a href="">火车游</a><a href="">自驾租车</a><a href="">度假公寓</a></p>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">出发地<input autocomplete="off" type="text" value="上海" readonly="readonly" class="s_vca_dest" id="text1" name="text1"></div>
+								<div class="s_item2">目的地<input autocomplete="off" type="text" value="中文/拼音" id="pkgdestCity" name="destCity"></div>
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit3">
+								<input id="StartCityID" name="StartCity" type="hidden" value="2">
+								<input id="SearchType" name="SearchType" type="hidden" value="">
+								<input id="SearchValue" name="SearchValue" type="hidden" value="">
+								<input id="SearchId" name="SearchId" type="hidden" value="">
+								<input id="StartCityPY" name="StartCityPY" type="hidden" value="">
+								<input id="FilterPara" name="FilterPara" type="hidden" value="">
+								<input type="hidden" id="SearchTextId" name="SearchText" value="">
+								<input type="hidden" id="vacationUrl" value="vacations.ctrip.com">
+							</div>
+						</form>
+					</div>
+										
+					<div class="s_content searchbox_animate" style="display:none;">
+						<form id="trainForm" action="" method="GET" onsubmit="return false;" style="">
+							<p class="s_type" id="trainSubSwitch">行程类型<label class="index_label" data-index="0"><input type="radio" name="traintype" value="Single" checked="checked">单程</label>&nbsp;<label class="index_label" data-index="1"><input type="radio" name="traintype" value="Double">往返</label>&nbsp;</p>
+							<div class="s_item_cont s_item_cont_ex">
+								<div class="s_exchange"><a href="javascript:;">换</a></div>
+								<div class="s_item">出发城市<input type="text" value="中文/拼音/首字母" autocomplete="off"></div>
+								<div class="s_item2">出发日期<input type="text" value="yyyy-mm-dd" autocomplete="off"></div>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item">到达城市<input type="text" value="中文/拼音/首字母" autocomplete="off"></div>							
+								<div class="s_item2 s_disable">返回日期<input type="text" value="yyyy-mm-dd" autocomplete="off"></div>
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit2">
+							</div>
+						</form>
+					</div>
+					
+					<div class="s_content searchbox_animate" style="display:none;">
+						<form id="" name="" action="" method="post" onsubmit="return false;">
+							<div class="s_links">
+								<p><span>时令主题：</span><a href="">赏花</a><a href="">乐园</a><a href="">古镇</a></p>
+								<p><span>精选城市：</span><a href="">上海</a><a href="">广州</a><a href="">深圳</a><a href="">北京</a><a href="">成都</a><a href="">杭州</a><a href="">苏州</a><a href="">青岛</a><a href="">厦门</a><a href="">三亚</a></p>
+								<p><span>热门推荐：</span><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php#">常州恐龙园</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php#">上海野生动物园</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php#">无锡灵山大佛</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php#">广州长隆</a></p>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item w100">目的地<input autocomplete="off" type="text" value="" id="" name="" class="w03" placeholder="景点名/城市名"></div>
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit5" name="submit5">
+							</div>
+						</form>
+					</div>
+					
+					
+					
+					<div class="s_content searchbox_animate" style="display:none;">
+						<form id="" name="" action="" method="post" onsubmit="return false;">
+							<div class="s_links">
+								<p><strong>5万</strong>个<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">旅行目的地</a>&nbsp;&nbsp;&nbsp;<strong>20万</strong>篇<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">游记</a>&nbsp;&nbsp;&nbsp;<strong>60万</strong>个<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">旅行问答</a></p>
+								<p class="txt_gray">10分钟内轻松将照片整理成游记，华丽呈现你的旅行。<a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" class="cui_btn_s_links">制作微游记</a></p>
+							</div>
+							<div class="s_item_cont">
+								<div class="s_item3">热门目的地</div>
+								<div class="s_item3 s_item3_links"><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">北京</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">香港</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">台北</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">澳门</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">三亚</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">厦门</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">上海</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">丽江</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">西安</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">首尔</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###">沙巴</a><a href="http://prototype.dev.sh.ctriptravel.com/code_pub/cn/ctrip/searchbox.php###" class="more">更多&gt;&gt;</a></div>
+								<div class="s_item3"><input autocomplete="off" type="text" value="" id="" name="" class="w03" placeholder="景点名和城市名"></div>
+							</div>
+							<div class="s_button_area">
+								<input type="submit" value="搜索" class="s_btn" title="搜索" id="submit5" name="submit5">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="pic_banner">
+					<div class="pic_banner_t"><img alt="banner1" src="./携程首页_files/zzz_banner_06.jpg"></div>
+					<div class="pic_banner_b"><img alt="banner1" src="./携程首页_files/zzz_banner_07.jpg"></div>
+				</div>
+			</div>
+	
+	<script src="http://webresource.c-ctrip.com/code/cquery/LABjs/LAB.js" charset="utf-8" type="text/javascript"></script>
+	<script type="text/javascript" language="javascript">
+ 
+	var $globalPad = true; //support ctrip on pad
+	var $isPad = /pad/.test(navigator.userAgent.toLowerCase()); 
+	$LAB
+		.script({ src: 'http://webresource.c-ctrip.com/code/cquery/cQuery_110421.js', charset: 'utf-8' }).wait()
+		.padScript({ src: "http://webresource.c-ctrip.com/code/cquery/pad.js", charset: "utf-8" }).wait(loadMods)
+		//.script({ src: 'http://webresource.c-ctrip.com/code/cquery/mod/adFrame-1.0_address-1.0_allyes-1.0_calendar-3.0_dropBox-1.0_notice-1.0_tab-1.2_toggle-1.0_validate-1.1.js', charset: 'utf-8' }).wait()
+		.script({ src: 'FHX_search 2.js', charset: 'utf-8'});	
+	
+	function loadMods(){
+		for(var k in PluginsVersion){
+			$.mod.load(k, PluginsVersion[k]);
+		}
+	}
+	
+	window.PluginsVersion = {
+		"tab": "1.2",
+		"address": "1.0",
+		"calendar": "6.0",
+		"notice": "1.0",
+		"toggle": "1.0",
+		"validate": "1.1",
+		"allyes": "1.0",
+		"adFrame": "1.0",
+		"dropBox": "1.0"
+	}
+	
+	FHXConfig = {
+		URL: {
+			FREE_COMBINE: 'http://vacations.ctrip.com/DIY/freesearchlist.aspx',
+			SINGLE_FLT_HOTEL: 'http://vacations.ctrip.com/DIY/$1-$2$3-$4$5'
+		},
+		placeholder: ['yyyy-mm-dd', '中文/拼音', '酒店名称', '选择商业区或行政区'],
+		validate: [
+			"请选择出发日期",
+			"请选择返回日期",
+			"请选择入住日期",
+			"请选择离开日期",
+			"日期不符合格式规范或无效的日期",
+			"您选择的返回日期早于/等于出发日期，请重新选择",
+			"您选择的离店日期早于/等于入住日期，请重新选择",
+			"最大行程不能超过28天，请分订单提交预订",
+			"请选择出发城市",
+			"请选择到达城市",
+			"请选择入住城市",
+			"入住日期最早只能出发日期前一天",
+			"离开日期最晚只能返回日期后一天",
+			"出发城市不能与到达城市相同"
+		],
+		defaultDepart: '上海',
+		hotelTemplate: '				<div class="s_item_cont">					<div class="s_item w100">						酒店<input type="text" autocomplete="off" class="w07" value="${to}"/><input type="hidden" name="ToCities" value="${toid}" /><input type="hidden" name="citypy" value="" /><input type="text" name="CheckInDate" autocomplete="off" class="w08" readonly="readonly"/><input type="text" name="CheckOutDate" autocomplete="off" class="w08" readonly="readonly"/>					</div>					<a href="javascript:;" data-index="${count}" class="s_item_del fr"></a>				</div>',
+		address: {
+			message: {
+				suggestion: '热门城市（可直接选择城市或输入城市全拼/简拼）',
+				filterResult: '${val}，按字符顺序排序',
+				noFilterResult: ' 对不起，无匹配，请重新输入。',
+				sort: ["", "", "", "", "", "", "", "", "", "\"${val}\" 国家名，相关城市"]
+			},
+			suggestion: [
+				'<div class="c_address_box2 hot_city">                        <div class="c_address_hd">${message.suggestion}</div>                        <div class="c_address_bd">                            {{enum(key,arr) data}}                                <ul class="c_address_ul layoutfix">                                {{each arr}}                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>                                {{/each}}                                </ul>                            {{/enum}}                        </div>                    </div>',
+				'<div class="c_address_box2 hot_city world">                        <div class="c_address_hd">${message.suggestion}</div>                        <div class="c_address_bd">                            {{enum(key,arr) data}}                                <ul class="c_address_ul layoutfix {{if key=="国内" }}c_address_ul_no{{/if}}">                                <li class="tit"><strong>${key}</strong></li>                                {{each arr}}                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>                                {{/each}}                                </ul>                            {{/enum}}                        </div>                    </div>'],
+			suggestionIpad: [
+				'<div class="c_address_box c_address_box2 hot_city hot_city_pad">                        <div class="c_address_hd">${message.suggestion}</div>                        <div class="c_address_bd">                            {{enum(key,arr) $data.data}}                                <ul class="c_address_ul layoutfix">                                {{each arr}}                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>                                {{/each}}                                </ul>                            {{/enum}}                        </div>						<a href="javascript:void(0)" class="ico_key" id="mini_c_address_keyboard">Keyboard</a>						<a href="javascript:void(0)" class="address_close" id="mini_c_address_close">close</a>                    </div>',
+				'<div class="c_address_box c_address_box2 hot_city hot_city_pad world">                        <div class="c_address_hd">${message.suggestion}</div>                        <div class="c_address_bd">                            {{enum(key,arr) $data.data}}                                <ul class="c_address_ul layoutfix {{if key=="国内" }}c_address_ul_no{{/if}}">                                <li class="tit"><strong>${key}</strong></li>                                {{each arr}}                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>                                {{/each}}                                </ul>                            {{/enum}}                        </div>						<a href="javascript:void(0)" class="ico_key" id="mini_c_address_keyboard">Keyboard</a>						<a href="javascript:void(0)" class="address_close" id="mini_c_address_close">close</a>                    </div>'],
+			suggestionStyle: '					.basefix,.layoutfix { *zoom:1; }					.basefix:after,.layoutfix:after { clear:both; content:"."; display:block; height:0; overflow:hidden; }					.ico_key,.ico_unkey{position: absolute;top: 1px;left: 1px;width: 34px;height: 24px;overflow: hidden;line-height: 999em;font-size: 0;background: url(http://pic.c-ctrip.com/ctripOnPad/ico_key.png) no-repeat 0 0;-webkit-transform: scale(.7);}					.address_close{position: absolute;top: 3px;right: 4px;width: 18px;height: 19px;overflow: hidden;line-height: 999em;font-size: 0;content: "";text-indent: 99em;background: url(http://pic.c-ctrip.com/ctripOnPad/pad_address_icon.png) no-repeat -32px 0;-webkit-transform: scale(0.5);}					.ico_unkey{background: url(http://pic.c-ctrip.com/ctripOnPad/ico_unkey.png) no-repeat 0 0;}					.c_address_box { background-color: #fff; font-size: 12px; width: 384px; }					.c_address_box a { text-decoration: none; }					.c_address_box2 { background-color: #fff; font-size: 12px; width: 384px; }					.c_address_box2 a { text-decoration: none; }					.c_address_hd {dispaly:none; height: 24px; border-color: #add9f4; border-style: solid; border-width: 1px 1px 0; background-color: #67A1E2; color: #fff; line-height: 24px; padding-left: 10px; }					.c_address_hd .hd_tips{ color:#cee3fc;}					.c_address_bd { border:#add9f4 1px solid; overflow: hidden; padding:10px; }					.c_address_ol { margin:0; padding:0 0 20px; border-bottom: 1px solid #5DA9E2; }					.c_address_ol li { color: #005DAA; cursor: pointer; float: left; height: 20px; line-height: 20px; list-style-type: none; text-align: center; }					.c_address_ol li span { padding:0 8px; }					.c_address_ol li .hot_selected { display:block; padding:0 5px; background-color: #FFFFFF; border-color: #5DA9E2; border-style: solid; border-width: 1px 1px 0; color: #000000; font-weight: bold; }					.c_address_ul { margin:0; padding: 4px 0 0; }					.c_address_ul li { float: left; height: 24px; overflow: hidden; width: 72px; }					.c_address_ul li a { display: block; height: 22px;  border: 1px solid #FFFFFF; color: #1148A8; line-height: 22px; padding:0 5px; }					.c_address_ul li a:hover { background-color: #E8F4FF; border: 1px solid #ACCCEF; text-decoration: none; }					.hot_city{ width:300px;}					.hot_city_pad{ width:425px;}					.c_address_hd{ text-align:center}					.hot_city .c_address_bd{ padding:6px 0;}					.hot_city_pad .c_address_bd{ padding:10px;}					.hot_city li { width:50px;}					.world{ width:348px;}					.world .c_address_ul { padding:4px 0 4px 50px; position:relative; border-top:#ccc 1px dotted;}					.world .c_address_ul_no{ border-top:0 none}					.world .tit{ position:relative; margin:0 0 0 -38px; width:38px; line-height:24px; _display:inline;}',
+			filter: '                    <div class="c_address_select">                        <div class="c_address_wrap">                            <div class="c_address_hd">{{if hasResult}}{{tmpl message.filterResult}}{{else}}{{tmpl message.noFilterResult}}{{/if}}</div>                            <div class="c_address_list" style="">                                {{each (i,item) list}}                                    {{if cQuery.type(item)=="string"}}                                        <label>${item}</label>                                    {{else}}                                        <a href="javascript:void(0);" data="${data}" style="display: block;">${left}<span>${right}</span></a>                                    {{/if}}                                {{/each}}                            </div>                            {{if page.max>-1}}                                <div class="c_address_pagebreak" style="display: block;">                                    {{if page.current>0}}                                        <a href="javascript:void(0);" page="${page.current-1}">&lt;-</a>                                    {{/if}}                                    {{if page.current<2}}                                        {{loop(index) Math.min(5,page.max+1)}}                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>                                        {{/loop}}                                    {{else page.current>page.max-2}}                                        {{loop(index) Math.max(0,page.max-4),page.max+1}}                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>                                        {{/loop}}                                    {{else}}                                        {{loop(index) Math.max(0,page.current-2),Math.min(page.current+3,page.max+1)}}                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>                                        {{/loop}}                                    {{/if}}                                    {{if page.current<page.max}}                                        <a href="javascript:void(0);" page="${page.current+1}">-&gt;</a>                                    {{/if}}                                </div>                            {{/if}}                        </div>                    </div>',
+			filterStyle: '                    .c_address_wrap { width: 220px; min-height: 305px; margin: 0; padding: 0 0 4px; border: 1px solid #add9f4; background:#fff; text-align: left; }                    .c_address_select .c_address_list { margin: 0; min-height: 277px; padding: 0; }                    .c_address_select .c_address_list span { font:10px/1. verdana; color:#bbb; display:block; margin: 0; overflow: hidden; padding: 0; white-space: nowrap; text-transform:uppercase }                    .c_address_select .c_address_list a { border-bottom: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF; color: #0055AA; cursor: pointer; display: block; overflow: hidden;padding:3px 8px; text-align: left; text-decoration: none; }                    .c_address_select .c_address_list a:hover,                    .c_address_select .c_address_list a.hover { background:#e8f4ff; border-bottom: 1px solid #acccef; border-top: 1px solid #acccef; }                    .c_address_select .c_address_pagebreak { display: none; line-height: 25px; margin: 0; padding: 0; text-align: center; }                    .c_address_select .c_address_pagebreak a { color: #0055AA; display: inline-block; font-family: Arial, Simsun, sans-serif; font-size: 14px; margin: 0; padding: 0 4px; text-align: center; text-decoration: underline; width: 15px; }                    .c_address_select #c_address_arrowl, .c_address_select #c_address_arrowr { color: #0055AA; }                    .c_address_select a.address_current { color: #000; text-decoration: none; }',
+			hotelFilter: '                    {{if hasResult}}                    <div class="city_suggestion_pop">                        <p class="title">{{if hasResult}}{{tmpl message.filterResult}}{{/if}}</p>                        <div class="sug_item">                            {{each (i,item) list}}                                {{if cQuery.type(item)=="string"}}                                    <a>${item}</a>                                {{else}}                                    <a href="javascript:void(0);" data="${data}" title="${right}(${left})">                                        <span class="city">                                            <span class="cn">${right}</span>                                            <span class="en">${left}</span>                                        </span>                                    </a>                                {{/if}}                            {{/each}}                        </div>                    </div>                    {{/if}}',
+			hotelFilterStyle: ' .city_suggestion_pop { width:446px; border:1px solid #ccc; background-color:#fff; } .city_suggestion_pop .title { height:26px; margin:0 10px 4px; padding:0 2px; border-bottom:1px dotted #ccc; line-height:26px; color:#999; } .city_suggestion_pop .close { float:right; width:26px; height:26px; font:bold 14px/26px Simsun; color:#666; text-align:center; } .city_suggestion_pop .text_input { float:left; max-width:210px; _width:210px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; } .city_suggestion_pop .close:hover { text-decoration:none; color:#FFA800; } .city_suggestion_pop .sug_item a { display:block; padding:0 10px; color:#000; font-family:Tahoma; line-height:28px; cursor:pointer; } .city_suggestion_pop .sug_item .num { float:right; color:#999; } .city_suggestion_pop .sug_item .city { display:block; width:350px; max-height:56px; _height:28px; padding-right:4px; overflow:hidden; } .city_suggestion_pop .sug_item .en { color:#999; } .city_suggestion_pop .sug_item b { font-weight:bold; color:#06c; } .city_suggestion_pop .sug_item a:hover,  .city_suggestion_pop .sug_item .hover { background-color:#06c; color:#fff; text-decoration:none; } .city_suggestion_pop .sug_item a:hover span,  .city_suggestion_pop .sug_item .hover span,  .city_suggestion_pop .sug_item a:hover b,  .city_suggestion_pop .sug_item .hover b { color:#fff; }'
+		}
+	}
+		
+</script>
+
+
+</body></html>

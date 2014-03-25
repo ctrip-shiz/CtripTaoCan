@@ -1,0 +1,617 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { margin:0; padding:0; }
+html { background-color:#FFF; }
+body { background-color:#FFF; font-size:12px; line-height:1.5; font-family:Tahoma,Simsun,sans-serif; color:#333; }
+img, fieldset { margin:0; padding:0; border:0; }
+input, textarea { font-size:12px; }
+table { border-collapse:collapse; }
+a { color:#06C; text-decoration:none; outline:none; }
+a:hover { text-decoration:underline; }
+h1, h2, h3, h4, h5 { font-family:Tahoma,Simsun,sans-serif; }
+ul li, ol li { list-style:none; }
+input[type="button"],input[type="submit"]{-webkit-appearance:none;}
+dfn { margin-right:2px; font-style:normal; font-size:12px; font-family:Arial !important; }
+section { display:block; }
+select { padding:1px; font-family:Arial,Simsun,sans-serif; border:1px solid #BBB; background-color:#FFF; }
+.layoutfix{display:inline-block;}
+.layoutfix{display:block;overflow:hidden;}
+.basefix { *zoom:1; }
+.basefix:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.base_warning { color:#F00; font:normal 12px Simsun; }
+.float_left { float:left !important; }
+.float_right { float:right !important; }
+.base_txtsilver { color:#999; }
+.invisible { visibility:hidden !important; }
+.hidden { display:none !important; }
+.base_txtdiv { cursor:pointer; }
+.border_none { border:0 none !important; }
+
+/* hide ie10 clear button*/
+#txtCheckIn::-ms-clear, #txtCheckOut::-ms-clear { display:none; }
+
+/* Structure Begin */
+.cui_nav_wrap { margin-bottom:12px;min-width:1200px;}
+.cui_hd, .cui_nav{width:1180px;}
+#base_bd { width:1180px;padding: 0 10px; margin:0 auto; *zoom:1; }
+#base_bd:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+/*footer*/
+.base_ft_wrap{border-top:1px dashed #9ECCF5;padding-top:18px;}
+p.copyright{font-family:Verdana,simsun,sans-serif;}
+
+.index_side { float:left; width:380px; margin-right:20px; }
+.index_main { float:left; width:780px; zoom:1; }
+/* Structure End */
+
+/* page_mini */
+.c_page_mini { font: 12px/1.5 arial; margin: 0; padding: 0; text-align: center; }
+.c_page_mini a {display: inline-block; margin: 0;color: #0055AA;padding: 0 6px;font:14px/1.5 Arial, Simsun, sans-serif;text-decoration: underline;}
+.c_page_mini .c_page_mini_current{ color: #666;text-decoration: none;cursor: default;}
+
+/* Sider Begin */
+.search_box h1,.btn_map,.flight_hotel,.btn_base,.booking_success,.sider_other_info dt,.city_chosen,.no_hot_sold span,.price_tip,.prev_slide, .next_slide, .prev_slide_disable, .next_slide_disable,.hot_sold_title b,.customer_qa,.icon_plate,.hotel_goldmedal, .hotel_silvermedal, .hotel_bluemedal, .hotel_strategymedal, 
+.hotel_diamond01, .hotel_diamond02, .hotel_diamond03, .hotel_diamond04, .hotel_diamond05, .hotel_diamond06, .hotel_halfdiamond01, .hotel_halfdiamond02, .hotel_halfdiamond03, .hotel_halfdiamond04, .hotel_halfdiamond05, .hotel_halfdiamond06, .hotel_stars01, .hotel_stars02, .hotel_stars03, .hotel_stars04, .hotel_stars05, .side_sales .icon_sale, .hot_sold_title .bg_hot, .search_flight_hotel, .search_box_tab b, .icon_calendar {background:url(http://pic.c-ctrip.com/hotels_seo/un_index121010.png?130527.png) no-repeat;}
+
+
+/*=s Search Form */
+	.search_box_tab {height:43px; margin-bottom:-5px; font:normal 18px/42px "Microsoft Yahei";border-bottom:0 none; border-radius:5px 5px 0 0; background-color:#3983E5; box-shadow:0 -8px 4px -4px #888 inset; color:#fff;}
+	.search_box_tab b { float:left; width:18px; height:13px; margin:13px 10px 0 10px; background-position:-320px -46px;overflow:hidden;}
+
+
+	.search_box { position:relative; height:347px; margin-bottom:20px; padding-top:6px; border:1px solid #2F79DB; border-top:0 none; border-radius:6px; background-color:#3983E5; }
+	.search_box h1 { position:absolute; top:0; left:-1px; width:380px; height:44px; text-indent:-9999px; overflow:hidden; }
+	.search_form { position:relative; height:342px; margin:0 5px;  border-radius:5px; background-color:#FFF; }
+	.searchbox { width:100%; }
+	.searchbox th { width:86px; padding:5px 0 5px 5px; color:#666; text-align:right; vertical-align:middle; font:normal 14px "Microsoft Yahei"; color:#555; }
+	.searchbox tr { line-height:25px; _line-height:22px; }
+	.searchbox td { padding:6px 0 7px 10px; }
+	.searchbox .input_text,.searchbox .input_text2 { padding-left:3px; border-color:#bbb #ddd #ddd #bbb; border-style:solid; border-width:1px; height:28px; width: 227px;*vertical-align:-3px;box-shadow:1px 1px 1px #DDD inset; outline:none; color:#333; font:14px/28px Tahoma,Simsun,serif;}
+	.searchbox .base_warning { padding-right:5px; vertical-align:middle; }
+	.searchbox .inputSel { color:#999; }
+	
+	.search_form .searchbox .input_text:focus, .search_form .searchbox .input_text2:focus { border:1px solid #5d9de5; background-color:#FFF; box-shadow:none; outline:none; }
+	.searchbox select { width:232px; color:#333; }
+	.searchbox .error { border:1px solid #E50000; background-color:#FFF7D9; }
+	.search_btn, .search_btn2 { display:inline; float:right; width:234px; padding:10px 33px 0 0; }
+	.btn_search,.btn_search_disable{float:left; width:156px; height:33px; color:#fff; font-size:16px; font-family: "Microsoft Yahei",Simsun,sans-serif; font-weight:bold; cursor:pointer;  text-align: center; box-shadow:0 1px 0 rgba(95, 50, 0, 0.7); border-radius:3px; *filter:chroma(color=#000000); vertical-align:middle; outline:none; }
+	.btn_search{text-shadow:1px 1px 0 #CF7000;background-color:#ffb000;border:solid 1px #E77C00;}
+	.btn_search_disable{color:#999;background-color:#efefef;border:solid 1px #ccc;cursor:not-allowed;}
+	.btn_search:hover{background-color:#f79700;border-color:#de7800;}
+	.btn_map { float:left; width:66px; height:33px; border:0 none; background-color:#2277CC; background-position: -160px -83px; box-shadow:0 1px 0 rgba(0, 0, 0, 0.4); border-radius:3px; vertical-align:middle; cursor:pointer; outline:none; }
+	.btn_map:hover { background-position:-230px -83px; }
+	.search_btn2 .btn_search, .search_btn2 .btn_search_disable { width:232px; margin:0; _margin-right:-3px; }
+	.search_btn2 .btn_map { width:88px; background-position:0 0; }
+	.search_btn2 .btn_map:hover { width:88px; background-position:-92px 0; }
+	
+	.search_flt_htl { position:absolute; top:-37px; left:280px;  }
+	.flight_hotel { display: block;height:16px;padding-top: 16px; line-height:16px; color:#FFF; background-position:-328px -48px;background-repeat: no-repeat;}
+	.search_flight_hotel { position: absolute; top:-43px; left:257px; width:116px; height:43px; background-position:-240px -288px; border-radius:0 5px 0 0; }
+	.search_flight_hotel .flt_htl { display: block; height:43px; padding-left:63px; line-height: 40px; color:#FFF; }
+	.icon_calendar { position:absolute; right:39px; width:16px; height:14px; margin-top:8px; background-position:-352px -112px; }
+
+	/*-- package search form begin --*/
+		.pkg_choose {height:32px;padding-left:35px;padding-top:10px;margin-bottom:5px;background-color:#f5f5f5;font-family:"Microsoft Yahei";font-size:14px;line-height:16px; border-radius:5px 5px 0 0;}
+		.pkg_choose label {display:inline-block;width:64px;margin-right:27px; cursor:pointer;}
+		.pkg_choose label.current{font-weight:bold;}
+		.pkg_choose input { margin-right:3px;}
+		.pkg_choose a { font-family:Simsun,serif; }
+		.pkg_search_form select { width:65px; margin-right:10px; }
+		.pkg_search_form .search_btn { position:absolute; right:0; bottom:46px; padding-top:2px; }
+		.pkg_search_form .btn_search, .pkg_search_form .btn_search_disable { width:232px; }
+	/*-- package search form end --*/
+/*=e Search Form */
+/*=s Sider Advertise */
+	.sider_ads { display:block; width:370px; height:166px; border:5px solid #ffd33a; }
+	.sider_ads:hover { border-color:#FFA800; }
+/*=e Sider Advertise */
+/*=s Sider Sales */
+	.side_sales { width:380px; margin-top:25px; }
+	.index_side h2, .index_main h2 { height:34px; margin-bottom:3px; font:normal 22px/34px "Microsoft Yahei"; }
+	.side_sales a { display:block; width:378px; height:63px; margin-bottom:10px; border:1px solid #E2E2E2; border-radius:3px; }
+	.side_sales a:hover { position:relative; margin:-1px -1px 9px; border:2px solid #FFA800; top:-1px\0/; margin-bottom:8px\0/; top:0\9\0; margin-bottom:9px\9\0; }
+	.side_sales .icon_sale { position:absolute; width: 45px; height: 28px; margin: -5px 0 0 4px; background-position:0 -288px; }
+/*=e Sider Sales */
+/*=s Sider Book */
+	.sider_book { height:35px; margin-bottom:20px; line-height:35px; }
+	.sider_book strong { margin-right:5px; }
+	.sider_book .input_txt { position: relative; z-index: 3; width: 227px; height:22px; padding:3px; border:1px solid #CCC; background-color:#FFF; vertical-align:middle; line-height:22px;  }
+	.input_txt { height:16px; padding:3px; border:1px solid #CCC; background-color:#FFF; vertical-align:middle; line-height:16px; }
+	.btn_base { display:inline-block; width:45px; height:22px; margin-left:5px; border:0 none; background-position: -194px -120px; vertical-align:middle; cursor:pointer; text-align:center; color:#333; line-height:22px; }
+	.btn_base:hover { text-decoration:none; background-position:-241px -120px; }
+	.sider_book .btn_base { width: 51px;height: 30px; margin-left: -1px; background-position: -299px -83px; text-indent:-999px; }	
+	.sider_book .btn_base:hover { background-position: -299px -114px; }
+	
+	.booking_success { display:inline-block; margin-right:20px; padding-left:45px; background-position: -343px -240px;color:#666; font:14px/32px Simsun; }
+/*=e Sider Book */
+/*=s Sider Other Info */
+	.sider_other_info { margin-bottom:24px; }
+	.sider_other_info dt { display:block; height:27px; margin-bottom:5px; padding-left:36px; background-position: -353px -80px;background-repeat: no-repeat; font:18px/32px "Microsoft Yahei"; color:#528C01; }
+	.sider_other_info dd { display:block; margin-bottom:10px; padding-left:36px; color:#888; }
+/*=e Sider Other Info */
+/*=s Customer QA */
+	.customer_qa { display:block; width:378px; height:46px; border:1px solid #DEDEDE; border-radius:5px; background-position: 0 -144px; line-height:200px; overflow:hidden; }
+	.customer_qa:hover { position:relative; margin:-1px; border:2px solid #FFA800; top:-1px\0/; margin-bottom:-2px\0/; }
+	.customer_survey{ margin: 10px 0;display: block;}
+/*=e Customer QA */
+
+/*=s history */
+
+.index_history{margin-bottom:20px;}
+.index_history_list{overflow:hidden;position:relative;zoom:1;}
+.index_history_list li{
+	overflow:hidden;border-top:1px dotted #DDD;position:relative;zoom:1;margin-top:-1px;line-height:1.4;
+	height:74px;padding-top:10px;
+}
+.index_history_list li:hover,
+.index_history_list li.bg_hover{background-color:#E8F4FF;}
+
+.index_history_list li .sider_hotel_pic{
+	float:left;width:64px;height:64px;margin-right:10px;display:block;
+	background:url(http://pic.c-ctrip.com/hotels_deal/bg_nopic64x64.png) no-repeat;
+}
+.index_history_list li .sider_hotel_pic img{display:block;width:64px;height:64px;border-radius:5px 5px 5px 5px;}
+
+.index_history_list li .hotel_name{
+	display:block;font:bold 14px/18px Simsun;max-height:36px;_height:36px;overflow:hidden;word-wrap:break-word;cursor:pointer;
+	margin-right:30px;
+}
+
+.index_history_list li .info a{color:#666;}
+.index_history_list li .info span{font-weight:bold;}
+
+.index_history_list li .delete{position:absolute;top:5px;right:10px;z-index:9;font-style:normal;color:#666;font-size:18px;text-align:center;cursor:pointer;display:none;}
+.index_history_list li .delete:hover{text-decoration:none;color:#06c;}
+
+.index_history_list li:hover .delete,
+.index_history_list li.bg_hover .delete{display:block;}
+
+/*=e history */
+
+/* Sider End */
+
+/* Main Begin */
+/*=s Main Advertise */
+	.main_ads { height:235px; margin-bottom:15px; overflow: hidden; }
+/*=e Main Advertise */
+/*=s Nearby Hotel */
+.nearby_htl_box {margin-bottom:20px;}
+.nearby_htl_box h2 {border-bottom:2px solid #5599DD;}
+.nearby_htl_box .more{ position:absolute;right:0;padding-top: 10px;}
+.nearby_htl_box .hotsold_city_list {margin:-29px 0 0 186px;}
+.nearby_htl_box .hotsold_city_list a.more_city { padding-right:20px; }
+.nearby_htl_filter {position:relative;height:36px;_margin-bottom:-3px;z-index:2;}
+.nearby_htl_filter .pop_box_city {margin:32px 0 0 250px;}
+.nearby_htl { float:left;width:638px; height:102px;overflow:hidden; zoom:1; }
+.nearby_htl li { float:left; width:91px;zoom:1; }
+.nearby_htl a { display:block; position:relative; width:100%;height:24px; padding-top:78px; background:url(http://pic.c-ctrip.com/hotels_seo/landmark_bottom_icon.png) no-repeat 23px 60px;color:#666; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.icon_plate { position:absolute; top:60px; left:50%; width:44px; height:14px; margin-left:-22px; background-position: -256px -240px; }
+.nearby_icon,.nearby_icon_hover { position:absolute; top:11px; left:50%; margin-left:-20px; z-index:5; }
+.nearby_icon_hover {display:none;}
+.nearby_htl a:hover,.nearby_htl li.current,.nearby_htl li.current a {position:relative;background:url(http://pic.c-ctrip.com/hotels_seo/landmark_bottom_icon.png) no-repeat -77px 60px #F2F2F2;text-decoration:none;color:#0066CC;}
+.nearby_htl a:hover .nearby_icon_hover, .nearby_htl .current .nearby_icon_hover{display:block;}
+.nearby_htl a:hover .icon_plate { background-position:-256px -256px; }
+.nearby_htl_detail {padding:10px;background-color:#F2F2F2;overflow:hidden;*zoom:1;}
+.nearby_htl_detail a,.nearby_htl_detail2 .second_list a {float:left;margin:5px;width:116px;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.nearby_htl_detail a:hover,.nearby_htl_detail2 .second_list a:hover {color:#0066CC;}
+.nearby_htl_detail2 .first_list,.nearby_htl_detail2 .second_list {padding:10px;*zoom:1;}
+.nearby_htl_detail2 .first_list:after ,.nearby_htl_detail2 .second_list:after {clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.nearby_htl_detail2 .first_list {line-height:22px;background-color:#F2F2F2;}
+.nearby_htl_detail2 .first_list li {float:left;width:120px;margin:5px 5px 5px 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.nearby_htl_detail2 .first_list a {padding:2px 5px;color:#333;}
+.nearby_htl_detail2 .first_list a:hover,.nearby_htl_detail2 .first_list a.current {background-color:#74A2DE;color:#fff;text-decoration:none;}
+.nearby_htl_detail2 .second_list {position:relative;}
+.nearby_htl_detail2 .second_list .arrow {position:absolute;top:0;left:50%;margin-left:-8px;width:0;height:0;line-height:0;font-size:0;border:8px solid #fff;border-top-color:#F2F2F2;}
+/*landmark_box */
+.landmark_wrap {position:relative;width:778px;border:1px solid #E2E2E2;border-top:0 none;overflow:hidden;*zoom:1;z-index:1;}
+.landmark_box {position:relative;*zoom:1;}
+.landmark_box:after { clear:both; content:'.';display:block; height:0; overflow:hidden; }
+.landmark_box .current .current_bar,.theme_landmark .icon,.search_landmark .icon,.landmark_box .current .current_arrow {background:url(http://pic.c-ctrip.com/hotels_seo/landmark_icon.png) no-repeat 60px 0;}
+.landmark_section {position:relative;float:left;width:70px;height:102px;font:14px/20px "microsoft yahei";}
+.landmark_box .current .current_bar {position:absolute;left:50%;width:51px;height:4px;margin-left:-25px;background-position:0 -120px;}
+.landmark_box .current .current_arrow {position:absolute;right:-10px;width:10px;height:102px;background-position:0 0;}
+.search_landmark {border-left:1px solid #E2E2E2;}
+.theme_landmark,.search_landmark {display:block;width:58px;height:90px;padding:6px;color:#333;}
+.current .theme_landmark,.current .search_landmark {color:#06c;cursor:default;}
+.theme_landmark:hover,.search_landmark:hover {text-decoration:none;color:#06c;}
+.theme_landmark .icon,.search_landmark .icon {display:block;width:20px;height:20px;margin:28px auto 6px;}
+.theme_landmark .icon {background-position:-30px -60px;}
+.search_landmark .icon {background-position:-30px -90px;}
+.current .theme_landmark .icon, .theme_landmark:hover .icon {background-position:-30px 0;}
+.current .search_landmark .icon, .search_landmark:hover .icon {background-position:-30px -30px;}
+.landmark_search_box {position:absolute;left:707px;width:710px;background-color:#fff;z-index:5;}
+.l_search_box {float:left;width:590px;height:67px;padding:35px 24px 0;background:url(http://pic.c-ctrip.com/hotels_seo/landmark_search_bg.jpg) no-repeat right 0;font-size:14px;overflow:hidden;}
+.l_search_box input {width: 227px;height:28px;line-height:28px;margin-left:10px;padding-left:3px; border-color:#bbb #ddd #ddd #bbb; border-style:solid; border-width:1px;  box-shadow:1px 1px 1px #DDD inset; outline:none; color:#333;vertical-align:middle;}
+.l_search_box input:focus { border:1px solid #5d9de5; background-color:#FFF; box-shadow:none; outline:none; }
+.l_search_box .inputSel {color:#999;}
+.l_search_box button {width:80px;height:26px;overflow:hidden;margin-left:10px;padding:0 10px;line-height:26px;color:#FFFFFF;border:1px solid #0055AA;background-color:#2277CC;box-shadow:0 1px 0 #C9C9C9;border-radius:3px;vertical-align:middle;cursor:pointer;}
+.l_search_box button:hover {background-color:#2299FF;}
+/*=e Nearby Hotel */
+/*=s Theme Hotel */
+	.theme_htl_box { position:relative; z-index: 5; margin-bottom:25px; padding:10px 20px 20px 20px; border: 1px solid #e8e8e8 ; background-color:#F5F5F5; zoom:1; }
+	.theme_htl_box h2 { padding-left:3px; }
+	.search_theme_htl { position:absolute; z-index: 5; top:12px; right:23px; height:24px; }
+	.pop_box_themes { position: absolute; width:93px;margin:21px 0 0 5px ;padding:5px 0;border:1px solid #4692CC; background-color: #fff; }
+	.pop_box_themes a{ display: block; height: 24px; padding: 0 10px; cursor: pointer; line-height:24px; }
+	.pop_box_themes a:hover{ background-color:#74A2DE; color:#FFF; text-decoration:none; }
+	
+	.city_chosen { display:inline-block; width:60px; height:22px; margin-left:5px; padding:0 24px 0 11px; overflow: hidden; background-position: 0 -120px; line-height:23px; color:#666; vertical-align:middle; font-size: 12px; }
+	.city_chosen:hover { text-decoration:none; background-position:-97px -120px; color:#FFF; }
+	.theme_htl_list { display:inline-block; margin-bottom:17px; overflow:hidden; }
+	.theme_htl_list{display:block;overflow:hidden;}
+	.theme_htl_list li { float:left; position:relative; width:151px; height:125px; overflow:hidden; margin:2px; font-weight:bold;}
+	.theme_htl_list .pic { position:relative;width:151px; height:125px; }
+	.theme_htl_list li .pic:hover img { display:none; }
+	.theme_htl_list .theme_htl_desc { position:absolute; left:0; bottom:0; _bottom:-1px; width:151px; height:30px; background-color:#000; line-height:25px; opacity:.4; filter:alpha(opacity=40); cursor:pointer; }
+	.theme_htl_list .theme_htl_content { position:absolute; left:0; bottom:0; _bottom:-1px; width:151px; height:30px; line-height:30px; text-align:center; color:#FFF; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer; }
+	.theme_htl_list li .link {position:absolute;top:0;left:0; width:151px; height:125px;font:12px/22px "microsoft yahei"; *background:url(#) ;color:#fff;text-align:center;text-decoration:none;text-indent:-99em; cursor:pointer; }
+	.theme_htl_list li .link:hover{background-color:#00ADE7;text-indent:0;text-decoration:none;}
+	.theme_htl_list .hover_info {display:none; font-size:14px;}
+	.theme_htl_list .hover_info strong { font:bold 20px/30px "Microsoft Yahei"; }
+	.theme_htl_list .link:hover .hover_info {display:inline-block;vertical-align:middle;}
+	.theme_htl_list li .link b{ display:inline-block;width:0;height:100%;vertical-align:middle;overflow:hidden; }
+/*=e Theme Hotel */
+/*=s Hot Sold Hotel */
+	.hot_sold_box { position:relative; margin-bottom:12px; z-index:2; }
+	.index_main .hot_sold_title { position:relative; height:50px; margin-bottom:10px; border-bottom:3px solid #5599dd; font:28px/58px "Microsoft Yahei"; color:#5599dd; line-height:58px\9\0; *line-height:64px; _overflow:hidden; }
+	.hot_sold_title b { position:absolute; left:50px; bottom:-12px; width:15px; height:9px; background-position: -288px -192px; overflow:hidden; }
+	.hot_sold_box .city_chosen { position:absolute; top:17px; left:140px; z-index:8; overflow:hidden; }
+	.hot_sold_title .bg_hot { position:absolute; top:6px; right:10px; width: 189px; height: 44px; background-position:-48px -288px; }
+
+	.hotsold_city_list { position:absolute; margin:-37px 0 0 128px; *zoom:1; }
+	.hotsold_city_list:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+	.hotsold_city_list li { position:relative; float:left; margin-right:1px; }
+	.hotsold_city_list a { display:inline-block; padding:2px 9px; color:#333; }
+	.hotsold_city_list a.more { padding-right:20px; }
+	.hotsold_city_list a:hover { background-color:#0066cc; color:#FFF; cursor:pointer; text-decoration: none; }
+	.hotsold_city_list b { position:absolute; width:0; height:0; margin:8px 0 0 4px; *margin-top:5px; border-width:4px; border-style:solid dashed dashed dashed; border-color:#06C transparent transparent transparent; vertical-align:middle; overflow:hidden }
+	.hotsold_city_list a:hover b { border-top-color:#FFF; }
+	.hotsold_city_list li.current i { display:block; position:absolute; bottom:-2px; left:50%; width:0; height:0; margin-left:-4px; border-width:4px; border-style:dashed dashed solid dashed; border-color:transparent transparent #5599DD transparent; overflow:hidden; }
+	
+	.hot_list { zoom:1; }
+	.searchresult_info { padding-bottom:10px; border-bottom:1px dotted #DDD; *zoom:1; }
+	.searchresult_info:after, .hot_list:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+	.searchresult_info li { float:left; padding-top:10px; }
+	.searchresult_info:hover, .searchresult_info_hover { background-color:#E8F4FF; }
+	.hotel_pic { position:relative; width:130px; margin-right:10px; z-index:5; }
+	.hotel_abbrpic img { display:block; }
+	.hotel_pic_big { display:none; position:absolute; top:-1px; left:135px; width:300px; height:225px; padding:2px; border:2px solid #CCC; box-shadow:2px 2px 4px #CCC; z-index:5; background:url(http://pic.c-ctrip.com/common/loading_50.gif) no-repeat center center #FFF; }
+	.hotel_abbrpic { display:block; position:relative; width:130px; height:130px; background-repeat:no-repeat; background-position:center center; overflow:hidden; }
+	.hotel_abbrpic:hover { overflow:visible; }
+	.hotel_abbrpic:hover .hotel_pic_big  { display:block; }
+	.hotel_abbrpic img { border-radius: 5px; }
+	.hotel_abbrpic .hotel_pic_big:hover { visibility:hidden; }
+	
+	/* stars & diamonds */
+	.hotel_diamond01, .hotel_diamond02, .hotel_diamond03, .hotel_diamond04, .hotel_diamond05, .hotel_diamond06, .hotel_halfdiamond01, .hotel_halfdiamond02, .hotel_halfdiamond03, .hotel_halfdiamond04, .hotel_halfdiamond05, .hotel_halfdiamond06, .hotel_stars01, .hotel_stars02, .hotel_stars03, .hotel_stars04, .hotel_stars05 { display:inline-block; background-position: -160px -192px; overflow:hidden; vertical-align:middle; }
+	.hotel_diamond01, .hotel_diamond02, .hotel_diamond03, .hotel_diamond04, .hotel_diamond05, .hotel_diamond06, .hotel_halfdiamond01, .hotel_halfdiamond02, .hotel_halfdiamond03, .hotel_halfdiamond04, .hotel_halfdiamond05, .hotel_halfdiamond06 { height:9px; }
+	.hotel_stars01, .hotel_stars02, .hotel_stars03, .hotel_stars04, .hotel_stars05 { height:10px; background-position:-160px -224px; }
+	.hotel_diamond01, .hotel_halfdiamond01 { width:11px; }
+	.hotel_diamond02, .hotel_halfdiamond02 { width:23px; }
+	.hotel_diamond03, .hotel_halfdiamond03 { width:35px; }
+	.hotel_diamond04, .hotel_halfdiamond04 { width:47px; }
+	.hotel_diamond05, .hotel_halfdiamond05 { width:59px; }
+	.hotel_diamond06, .hotel_halfdiamond06 { width:71px; }
+	.hotel_halfdiamond01 { background-position:-232px -192px; }
+	.hotel_halfdiamond02 { background-position:-220px -192px; }
+	.hotel_halfdiamond03 { background-position:-208px -192px; }
+	.hotel_halfdiamond04 { background-position:-196px -192px; }
+	.hotel_halfdiamond05 { background-position:-184px -192px; }
+	.hotel_halfdiamond06 { background-position:-172px -192px; }
+	.hotel_stars01 { width:12px; }
+	.hotel_stars02 { width:24px; }
+	.hotel_stars03 { width:36px; }
+	.hotel_stars04 { width:48px; }
+	.hotel_stars05 { width:60px; }
+	
+	/* medals */
+	.hotel_goldmedal, .hotel_silvermedal, .hotel_bluemedal, .hotel_strategymedal { display:inline-block; width:20px; height:20px; margin-right:5px; background-position: -256px -208px; vertical-align:middle; }
+	.hotel_silvermedal { background-position:-288px -208px; }
+	.hotel_bluemedal { background-position:-320px -208px; }
+	.hotel_strategymedal { width:22px;height:22px; background-position:-352px -208px; }
+	
+	.searchresult_info_name { width:446px; margin-right:10px; }
+	.searchresult_name { display:inline; margin-right:5px; vertical-align:middle; font:bold 14px Simsun; }
+	.searchresult_htladdress { margin:10px 0 5px; }
+	.searchresult_htladdress a { margin-right:10px; color:#333; text-decoration: underline; }
+	.hotel_comment { color:#333; }
+	.brief_comment { width: 100%; margin-top:10px; font-family:Simsun; color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	
+	.hotel_price_icon { width:184px; }
+	.price_box { height:38px; margin-bottom:10px; overflow:hidden; }
+	.price_tip { float:right; width:44px; height:38px; margin-right:5px; padding:8px 20px 0 5px; background-position: -160px -244px; text-align:center; line-height:1; }
+	.price_amount { color:#F60; font:12px Tahoma; }
+	.price { float:right; margin-top:5px; color:#F60; }
+	.price dfn { color:#333; font:12px Arial; vertical-align:8px; }
+	.price b { margin-right:5px; font:normal 24px Tahoma; }
+	.ico_gift { float:right; width:16px; height:16px; margin-bottom:5px; background-position: -256px -192px; }
+	.booking_info { display:block; clear:both; color:#10A200; text-align:right; }
+
+	.no_hot_sold { margin:13px 0 23px; font-size:14px; text-align:center; }
+	.no_hot_sold span { display:inline-block; width:32px; height:32px; margin-right:10px; background-position: -304px -240px; vertical-align:middle; }
+/*=e Hot Sold Hotel */
+/*=s Hotel Brand */
+	.hotel_brand_package { position:relative; width:732px; height:84px; margin-bottom:5px; padding:4px 24px; border-bottom:1px solid #E2E2E2; border-top:2px solid #D0D0D0; }
+	.joinin { position:absolute; right:0; top:-25px; height:16px; line-height:16px;  }
+	.prev_slide, .next_slide, .prev_slide_disable, .next_slide_disable { position:absolute; top:0; left:0; width:24px; height:92px; background-position: 0 -192px; }
+	.next_slide { left:auto; right:0; background-position:-26px -192px; }
+	.prev_slide:hover { background-position:-52px -192px; }
+	.next_slide:hover { background-position:-78px -192px; }
+	.prev_slide_disable { background-position:-104px -192px; cursor:default; }
+	.next_slide_disable { left:auto; right:0; background-position:-130px -192px; cursor:default; }
+	
+	.hotel_brand_list { position:relative; width:712px; height:84px; padding:0 10px; overflow:hidden; }
+	.htl_brand { height:84px; *zoom:1; }
+	.htl_brand:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+	.hotel_brand_list a { position:relative; float:left; width:80px; height:80px; margin-right:20px; border:2px solid #FFF; color:#666; text-align:center; }
+	.brand_name { position:absolute; left:0; bottom:6px; width:80px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	.hotel_brand_list a:hover { border-color:#FFA800; text-decoration:none; }
+	.htl_brand_img { width:80px; height:50px; }
+/*=e Hotel Brand */
+/* Main End */
+
+/* Hotel Ads Begin */
+.adv_wrap { float:left; width:100%; margin-top:50px; text-align:center; }
+.hotel_pic_list { width:975px; height:80px; margin:0 auto; overflow:hidden; }
+.hotel_pic_list li { display:inline; float:left; width:175px; margin:0 10px; overflow:hidden; }
+/* Hotel Ads End */
+
+/* Hotel Ranking Begin */
+.htl_ranking_hot { float:left; width:1158px; margin:10px 0 30px; padding:0 10px; border:1px solid #F0F0F0; color:#999; *float:none; }
+.htl_ranking_hot a { margin-right:10px; white-space:nowrap; color:#999; }
+.htl_ranking_hot h4 { padding:10px 0 5px; }
+.htl_ranking_hot h4 a { margin-left:10px; font-weight:normal; }
+.hot_htl_name, .htl_ranking_hot p { margin-bottom:10px; }
+/* Hotel Ranking End */
+
+/* Pox Box Begin */
+.pop_box_city { width:225px;padding:10px; border:1px solid #999999; background-color:#FFF; position:absolute;  z-index:10;margin:48px 0 0 386px;}
+.pop_box_city a {display:inline-block; height:22px; margin-right:12px; padding:0 10px; color:#333333; line-height:22px; cursor:pointer; }
+.pop_box_city a:hover { background-color:#0066cc; color:#ffffff; text-decoration:none; }
+/* Pox Box End */
+
+/* Address Box Begin */
+.address_box { width:406px; padding:10px; border:1px solid #4692CC; background-color:#FFF; z-index:10; }
+.address_ol { margin-bottom:10px; padding:0 0 22px; border-bottom:1px solid #4692CC; }
+.address_ol li { float:left; height:22px; line-height:22px; text-align:center; cursor:pointer; }
+.address_ol li span { display:block; padding:0 15px; color:#06C; font-weight:bold; }
+.address_ol .hot_selected { border-top:1px solid #4692CC; border-right:1px solid #4692CC; border-left:1px solid #4692CC; background-color:#FFF; }
+.address_ul li { float:left; width:93px; height:22px; margin-right:10px; line-height:22px; }
+.address_ul a { float:left; padding:0 5px; }
+.address_ul a:hover { border-radius:3px; background:#74A2DE; color:#FFF; text-decoration:none; }
+
+.address_dl {margin-bottom:20px;}
+.address_dl dt{ float:left;width:24px;margin-right:5px;font-weight:bold;background-color:#C0C0C0;color:#fff;text-align:center;}
+.address_dl .no_city{float:left;padding:0 5px;color:#666;}
+.address_dl a { float:left; width:65px;padding:2px 5px; margin-bottom:5px;overflow:hidden;white-space:nowrap;}
+.address_dl a:hover { border-radius:3px; background:#74A2DE; color:#FFF; text-decoration:none; }
+
+.address_list_hide { display:none; }
+.address_list_show { display:block; }
+/* Address Box End */
+
+/* Keyword Search Begin */
+.keyword_search { width:504px; font-size:12px; background:#fff; }
+.keyword_list, .keyword_list2 { border:1px solid #999; border-top:none; overflow:hidden; zoom:1; }
+.address_hot_list2 { position:relative; margin:5px 5px 0 5px; border-bottom:2px solid #CCC; *height:23px; }
+.address_hot_abb2 { height:23px; _margin-bottom:-5px; }
+.address_hot_abb2 li { float:left; height:28px; margin-right:10px; padding:0 7px; line-height:24px; color:#16B; cursor:pointer; _position:relative; }
+.address_hot_abb2 li span { padding:3px 0; }
+.address_hot_abb2 .hot_selected2 { background:url(http://pic.ctrip.com/hotels_seo/un_index_flthtl.png) no-repeat -28px -87px; }
+.keyword_list2 .area_list { clear:both; margin:0 5px; }
+.keyword_list2 .area_list2 { margin:0 14px; }
+.keyword_list2 .show_map { position:absolute; top:33px; left:408px; white-space:nowrap; z-index:2; }
+.keyword_sub_city { padding:5px 10px; border-top:1px solid #CCC; background-color:#F3F3F3; color:#333; }
+.keyword_sub_city a { margin-right:10px; color:#4D4D4D; }
+#div_metro a.current { border-color:#74A2DE; background-color:#74A2DE; color:#FFF; }
+#div_metro .metro_station { float:left; width:470px; margin-top:5px; padding:5px 10px; border:1px solid #CCE0F0; background-color:#E9F5FF; overflow:hidden; }
+#div_metro .metro_station a { display:inline-block; float:none; width:auto; border:0 none; color:#16B; }
+#div_metro .metro_station a:hover { text-decoration:underline; }
+
+.keyword{border:1px solid #7F9DB9; background:#FFF; padding:4px; margin:0px; text-align:left;overflow: hidden; position: absolute; z-index: 120;}
+.keyword a{padding:1px 5px 0px 5px;border-top:1px solid #FFF; border-bottom:1px solid #FFF; cursor:pointer; line-height:20px; color:#05a; display:block; text-decoration:none; min-height:20px}
+* html keyword a{height:20px}
+.keyword .checked{background:#E7F1FD; border-top:1px solid #7F9DB9; border-bottom:1px solid #7F9DB9;text-decoration:none;}
+.keyword a span { font-weight:bold; color:#000; }
+/* Keyword Search End */
+
+/* Address Area Begin */
+.address_hotcity { height:24px; padding-left:10px; border-width:1px 1px 0; border-style:solid; border-color:#2C7ECF; background-color:#67A1E2; line-height:24px; color:#FFF; }
+#address_area { clear:both; width:505px;}
+.area_list {zoom:1; }
+.area_list dt { padding:4px 0 4px 6px; border-bottom:1px dotted #ccc; color:#999;  }
+.area_list dd { width:100%; padding:5px 0; overflow:hidden; }
+.area_list dd a { float:left; width:106px; height:22px; margin-right:5px; padding:0 5px; border:1px solid #fff; line-height:22px; white-space:nowrap; text-overflow:ellipsis; color:#333; overflow:hidden; }
+.area_list dd a:hover { border:1px solid #ACCCEF; background:#E8F4FF; text-decoration:none; }
+
+.position_search { width:646px; border:1px solid #999; background-color:#fff; }
+.position_tab_box { height:34px; margin:0 14px; border-bottom:2px solid #ccc; } 
+.position_tab_box .view_map { float:right; width:102px; height:24px; margin-top:6px; background-color:#2277CC; line-height:24px; text-align:center; color:#fff; }
+.position_tab_box .view_map:hover { text-decoration:none; background-color:#2299FF; }
+.position_tab li { position:relative; float:left; display:inline; margin-right:20px; line-height:34px; color:#06c; cursor:pointer; }
+.position_tab li b { display:none; }
+.position_tab li span { padding:0 3px; }
+.position_tab .selected { border-bottom:2px solid #06c; margin-bottom:-2px; }
+.position_tab .selected b { position:absolute; top:35px; left:50%; display:block; width:0; height:0; margin-left:-5px; overflow:hidden; font-size:0; line-height:0; border-color:#06c transparent transparent transparent; border-style: solid dashed dashed dashed; border-width:5px; }
+.position_search .area_list { margin:0 14px; }
+.letters_block { padding-left:70px; *zoom:1; }
+div.letters_block a { width:119px; }
+.letters_block:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.letters_block .letters { float:left; width:56px; height:14px; margin:6px 0 0 -70px; background-color:#EBEBEB; color:#666; line-height:14px; text-align:center; }
+/* Address Area End */
+
+/* Address Hot Begin */
+#address_hot { width:415px; }
+.address_hotlist { zoom:1; }
+.address_hotcity { color:#fff !important; }
+.hotel_index_area { padding:10px 0 4px; overflow:hidden; width:403px !important; }
+.index_area { float:left; width: 180px; height: 68px; overflow-x: hidden; overflow-y: auto; border: 1px inset #000; color: #000; }
+.index_area li { padding-left: 3px; height: 14px; line-height: 14px; overflow: hidden; cursor: pointer; }
+.index_area li.on { background: #0a246a; color: #fff; }
+.index_area span { float:right; margin-right:3px;}
+.ico_index_area { display:inline; float:left; width:21px; height:20px; margin:25px 8px 0; background:url(http://pic.c-ctrip.com/hotels110127/ico_index_area.gif); overflow:hidden; }
+/* Address Hot End */
+
+/* Choice Begin */
+.choice { position:absolute; width:200px; margin:0px;  padding:4px; border:1px solid #7F9DB9; background:#FFF; text-align:left; z-index: 120; }
+.choice a {padding:1px 5px 0px 5px;border-top:1px solid #FFF; border-bottom:1px solid #FFF; cursor:pointer; line-height:20px; color:#05a; display:block; text-decoration:none; min-height:20px}
+* html .choice a {height:20px}
+.choice a:hover, .choice .checked {background-color:#E7F1FD; border-top:1px solid #7F9DB9; border-bottom:1px solid #7F9DB9;text-decoration:none; }
+.choice .close { display:none; }
+/* Choice End */
+
+/* Hongkong Begin */
+.hongkong_customer { position:relative; z-index:1;width:645px; height:340px; border:1px solid #68a1e0; background:url(http://img02.c-ctrip.com/common/bg_konghong.jpg) no-repeat; }
+.hongkong_customer a{ display:block;position:absolute;top:258px;width:96px;height:27px;overflow:hidden;}
+.hongkong_customer .btn_backto_ctrip { left:195px;}
+.hongkong_customer .btn_jumpto_ya { left:484px;}
+.hongkong_customer a img{display:block;}
+.hongkong_customer .btn_backto_ctrip img{ margin:0;}
+.hongkong_customer .btn_backto_ctrip:hover img { margin-top:-56px; }
+.hongkong_customer .btn_jumpto_ya img{ margin-top:-28px; }
+.hongkong_customer .btn_jumpto_ya:hover img{ margin-top:-84px; }
+/* Hongkong End */
+
+/*--pop up window--*/
+.base_pop{margin:0 auto;border:1px solid #67A1E2;background:#fff;}
+.base_pop .pop_hd{height:29px;padding-left:10px;background-color:#E5F2FE;background:url(http://pic.ctrip.com/hotels_seo/un_index_flthtl.png) repeat-x 0 -58px;font-size:12px;line-height:29px;color:#333;}
+.base_pop .pop_hd h3{font-size:12px;}
+.base_pop .delete{float:right;width:29px;height:29px;color:#176fb7;font-size:14px;font-weight:bold;text-align:center;text-decoration:none;}
+.base_pop .pop_bd{padding:8px 10px;}
+.pop_hd .delete:hover{background-color:#acccef;color:#176fb7;text-decoration:none;}
+.googlead{height:90px;width:950px;margin-bottom:15px;}
+
+/*--for fight + hotel--*/
+#flight_hotel{padding-bottom:30px;box-shadow:0 0 10px #666; font-family:Simsun;}
+.base_flthotel{width:420px;margin:25px auto 0;}
+.base_flthotel caption{padding:5px;text-align:left;text-indent:2em;}
+.base_flthotel i{padding:0 5px;background:url(http://pic.ctrip.com/hotels_seo/un_index_flthtl.png) no-repeat 0 -89px;}
+.base_flthotel th,.base_flthotel td{padding:5px;}
+.base_flthotel th{width:6em;;font-weight:normal;text-align:right;}
+.base_flthotel input{width:157px;height:16px;margin-right:5px;padding:2px 0 2px 3px;border-color:#404040 #c8c8c8 #c8c8c8 #404040;border-style:solid;border-width:1px;font-family:Arial;line-height:16px;}
+.base_flthotel .base_btns2{width:110px;height:27px;margin-top:10px;padding:0;border:0;background:url(http://pic.ctrip.com/hotels_seo/un_index_flthtl.png) no-repeat;line-height:27px;text-align:center;color:#fff;font-weight:bold;cursor:pointer;}
+.base_btns2:hover{background-position:0 -29px;}
+.base_flthotel select{width:45px;height:20px;border-color:#404040 #c8c8c8 #c8c8c8 #404040;border-style:solid;border-width:1px;}
+
+/* city select lhsl begin 
+.city_select_lhsl { width:378px; padding:10px; border:1px solid #999; background-color:#fff; }
+.city_select_lhsl .close { float:right; width:20px; height:20px; color:#666; text-align:center; font:bold 16px/20px Simsun; }
+.city_select_lhsl .close:hover { text-decoration:none; color:#FFA800; }
+.city_select_lhsl .title { color:#999; }
+.city_select_lhsl .tab_box { width:100%; height:22px; margin-bottom:6px; border-bottom:2px solid #ccc; } 
+.city_select_lhsl .tab_box li { position:relative; float:left; display:inline; margin-right:10px; line-height:22px; color:#06c; cursor:pointer; }
+.city_select_lhsl .tab_box li b { display:none; }
+.city_select_lhsl .tab_box li span { padding:0 3px; }
+.city_select_lhsl .tab_box .selected { border-bottom:2px solid #06c; margin-bottom:-2px; font-weight:bold; color:#333; }
+.city_select_lhsl .tab_box .selected b { position:absolute; top:23px; left:50%; display:block; width:0; height:0; margin-left:-5px; overflow:hidden; font-size:0; line-height:0; border-color:#06c transparent transparent transparent; border-style: solid dashed dashed dashed; border-width:5px; }
+.city_select_lhsl .city_item { display:inline-block; }
+.city_select_lhsl .city_item {display:block;overflow:hidden;}
+.city_select_lhsl .city_item  a { float:left; width:55px; height:22px; padding-left:5px; border:1px solid #fff; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; line-height:22px; }
+.city_select_lhsl .city_item  a:hover { border:1px solid #ACCCEF; background-color:#E8F4FF; text-decoration:none; }
+city select lhsl end */
+
+/* city prompting lhsl begin */
+.city_prompting_lhsl { width:230px; border:1px solid #999; background-color:#fff; }
+.city_prompting_lhsl .not_found { height:28px; margin-bottom:4px; padding-left:4px; color:#C01111; line-height:28px; overflow:hidden; white-space:nowrap; }
+.city_prompting_lhsl .city_item { display:block; padding:4px; border-bottom:1px dashed #E4E4E4; }
+.city_prompting_lhsl .city_item:hover, .city_prompting_lhsl  .hover { background-color:#E8F4FF; text-decoration:none; }
+.city_prompting_lhsl .city_item .num { float:right; color:#666; }
+.city_prompting_lhsl .city_item .city { font-size:14px; font-weight:bold; color:#555; }
+.city_prompting_lhsl .city_item .province { color:#555; }
+.city_prompting_lhsl .city_item .b { color:#06c; }
+.city_prompting_lhsl .c_page_mini { margin:6px 0; }
+/* city prompting lhsl end */
+
+/* key word lhsl begin */
+.key_word_lhsl { width:498px; padding:8px 10px; border:1px solid #999; background-color:#fff; }
+.key_word_lhsl .close { float:right; width:20px; height:20px; color:#666; text-align:center; font:bold 16px/20px Simsun; }
+.key_word_lhsl .close:hover { text-decoration:none; color:#FFA800; }
+.key_word_lhsl .key_word_list { margin-bottom:6px; }
+.key_word_lhsl .key_word_list dt { font-weight:bold; }
+.key_word_lhsl .key_word_list dd { display:inline-block; }
+.key_word_lhsl .key_word_list dd {display:block;overflow:hidden;}
+.key_word_lhsl .key_word_list a { float:left; height:22px; padding:0 15px 0 5px; border:1px solid #fff; line-height:22px; white-space:nowrap; }
+.key_word_lhsl .key_word_list a:hover { border:1px solid #ACCCEF; background-color:#E8F4FF; text-decoration:none; }
+/* key word lhsl end */
+
+/* keyword prompting lhsl begin */
+.keyword_prompting_lhsl { width:358px; border:1px solid #999; background-color:#fff; }
+.keyword_prompting_lhsl .keyword_block { margin-top:-1px; padding:4px 0; border-top:1px solid #ccc; }
+.keyword_prompting_lhsl .keyword_block .title { float:right; margin-right:10px; color:#666; }
+.keyword_prompting_lhsl .keyword_block a { display:block; width:310px; height:24px; padding-left:10px; font-size:14px; line-height:24px; font-family:"Microsoft YaHei"; color:#555; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.keyword_prompting_lhsl .keyword_block a:hover, .keyword_prompting_lhsl .keyword_block .hover { background-color:#E8F4FF; text-decoration:none; }
+.keyword_prompting_lhsl .keyword_block .b { color:#06c; }
+/* keyword prompting lhsl end */
+
+/* seoblock_201205 begin */
+.seo_201305 { clear:both; margin-bottom:30px; padding:10px; border:1px solid #DEDEDE; color:#999; }
+.seo_201305 a { color:#999; }
+.seo_201305 h4 { font-size:12px; font-weight:bold; }
+.seo_201305 .p { margin-bottom:10px; }
+.seo_201305 .seo_hot { margin-bottom:10px; padding-left:96px; display:inline-block; }
+.seo_201305 .seo_hot{display:block;overflow:hidden;}
+.seo_201305 .seo_hot dt { float:left; display:inline; width:96px; margin-left:-96px; }
+.seo_201305 .seo_hot dd { float:left; width:76px; margin-right:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.seo_201305 .seo_hot .black { color:#333; }
+/* seoblock_201205 end */
+
+/* save search begin */
+.search_form .input_short_city { width:134px; }
+.search_form .search_history_box { position:absolute; top:51px; *top:52px; left:244px; height:22px; }
+.search_history_box .title { position:relative; display:block; width:76px; height:20px; padding:4px 6px 4px 7px; border:1px solid #fff; background-color:#fff; font:14px/20px "Microsoft Yahei"; color:#333; z-index:2; }
+.search_history_box .title:hover { color:#06c; text-decoration:none; }
+.search_history_box .title b { display:inline-block; width:0; height:0; margin-left:8px; overflow:hidden; line-height:0; font-size:0; vertical-align:middle;	border-top:5px solid #333; border-bottom:0 none; border-left:5px dashed transparent; border-right:5px dashed transparent; }
+.search_history_box .title:hover b { border-top-color:#06c; }
+.search_history_box .history_list { position:absolute; top:28px; right:0; _right:-1px; display:none; border:1px solid #C5C5C5; background-color:#fff; }
+.search_history_box .history_list span { display:inline-block; white-space:nowrap; line-height:24px; }
+.search_history_box .history_list .history_item { display:block; padding:0 8px; white-space:nowrap; text-align:right; cursor:pointer; color:#333; }
+.search_history_box .history_list .history_item:hover, .search_history_box .history_list .item_hover,.search_history_box .history_list .item_past:hover .date { background-color:#2577E3; color:#fff; text-decoration:none; } 
+.history_list .item_past .date { color:#999; }
+.search_history_box .history_list .city { padding-right:8px; }
+
+.search_form .show_history { height:auto; }
+.show_history .title { border:1px solid #C5C5C5; border-bottom:1px solid #fff; }
+.show_history .title b { border-bottom:5px solid #333; border-top:0 none; border-left:5px dashed transparent; border-right:5px dashed transparent; }
+.show_history .title:hover b { border-bottom-color:#06c; }
+.show_history .history_list { display:block; }
+/* save search end */
+
+@media screen and (max-width:1250px) {
+	.main_ads { width:620px; overflow: hidden; }
+	#base_bd { width:980px; padding: 0 10px; overflow: hidden; }
+	.cui_hd,.cui_nav{width:980px;}
+	.cui_nav_wrap{min-width:1000px;}
+	.index_side { width: 340px; _overflow:hidden; }
+	.search_box h1 { width: 340px; background: url(http://pic.c-ctrip.com/hotels_seo/un_index121025.png); }
+	.sider_book .input_txt { width: 198px !important;  }
+	.search_btn, .search_btn2{padding: 10px 13px 0 0;}
+	.customer_qa { width: 338px; background: url(http://pic.c-ctrip.com/hotels_seo/un_index121025.png) 0 -46px; }
+	.index_main { width: 620px; }
+	.searchbox th { width: 66px;}
+	.sider_ads {overflow:hidden;width:330px}
+	.sider_ads img{margin-left:-20px;}
+	.theme_htl_list { height: 100px; }
+	.theme_htl_list li, .theme_htl_list .pic { width:120px; height:100px; }
+	.theme_htl_list .theme_htl_content,	.theme_htl_list .theme_htl_desc {width: 124px; top:70px; bottom: auto; }
+	.searchresult_info_name { width: 286px; overflow: hidden; }
+	.brief_comment { width: 296px; }
+	.hotel_brand_list { width: 552px; }
+	.hotel_brand_package{ width:572px; }
+	.side_sales a { width: 338px; overflow: hidden; }
+	.side_sales a img { margin-left: -20px; }
+	.hotel_brand_list a {margin-right: 10px;}
+	.htl_ranking_hot { width: 958px; }
+	.theme_htl_list li .link {width: 120px;height: 100px;overflow: hidden;}
+	.theme_htl_box{ padding: 10px 0 0 20px;}
+	.search_flight_hotel { left: 215px; }
+	#base_ft { width: 980px; }
+	.cui_tel_hover { z-index: 4 }
+	.pop_box_city { margin-left:193px; }
+	.landmark_wrap {width:618px;}
+	.nearby_htl {width:478px;}
+	.nearby_htl li {width:68px;}
+	.nearby_htl a {background-position:12px 60px;}
+	.nearby_htl a:hover,.nearby_htl li.current,.nearby_htl li.current a {background-position:-88px 60px;}
+	.landmark_search_box {left:548px;width:550px;}
+	.l_search_box {width:430px;}
+	.nearby_htl_detail a, .nearby_htl_detail2 .second_list a {width:108px;}
+	.nearby_htl_detail2 .first_list li {width:114px;}
+	.search_form .search_history_box { left:224px; }
+}

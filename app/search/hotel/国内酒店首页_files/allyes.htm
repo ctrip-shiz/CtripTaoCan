@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0076)http://prototype.dev.sh.ctriptravel.com/code_pub/cn/hotels121118/allyes.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>自动轮替广告</title>
+<style type="text/css">
+/*advertisement*/
+*{margin:0;padding:0;}
+.pics { height:235px; overflow:hidden; }
+.pic_numlist { position:relative; float:right; height:15px; margin:-25px 42px 0 0; overflow:hidden;list-style:none; }
+.pic_numlist li { float:left; width:11px; height:11px; margin-right:8px; border-radius:11px; background-color:#0AB0E8; border:2px solid #FFF; cursor:pointer;}
+.pic_numlist li.pic_current { background-color:#F8CD47; cursor:pointer; }
+</style>
+</head>
+<body marginwidth="0" marginheight="0">
+<div id="adpic" class="pics">            
+    <script type="text/javascript" src="adfshow" charset="gbk"></script>
+	<script type="text/javascript" src="adfshow(1)" charset="gbk"></script>
+	<script type="text/javascript" src="adfshow(2)" charset="gbk"></script>
+	<script type="text/javascript" src="adfshow(3)" charset="gbk"></script>
+	<script type="text/javascript" src="adfshow(4)" charset="gbk"></script>
+<a href="http://allyes.ctrip.com/main/adfclick?d=ctrip&i=z2070,2510113,34781,25355&k=&p=0&v=84138110&wl=&rf=http%3A%2F%2Fprototype%2Edev%2Esh%2Ectriptravel%2Ecom%2Fcode%5Fpub%2Fcn%2Fhotels121118%2Fallyes%2Ehtml&u=http://pages.ctrip.com/commerce/promote/201305/hotel/jcc/index_djp.html" target="_blank" style="position: absolute; opacity: 100;"><img src="djpfx780235.jpg" width="780" height="235" border="0" alt=""></a><a href="http://allyes.ctrip.com/main/adfclick?d=ctrip&i=z2071,2510478,31226,25356&k=&p=0&v=84196722&wl=&rf=http%3A%2F%2Fprototype%2Edev%2Esh%2Ectriptravel%2Ecom%2Fcode%5Fpub%2Fcn%2Fhotels121118%2Fallyes%2Ehtml&u=http://pages.ctrip.com/commerce/promote/201212/hotel/xsqg/index.html" target="_blank" style="position: relative; opacity: 100; display: none;"><img src="xxsqg780-235.jpg" width="780" height="235" border="0" alt=""></a><a href="http://allyes.ctrip.com/main/adfclick?d=ctrip&i=z2072,2510843,39077,25357&k=&p=0&v=84202243&wl=&rf=http%3A%2F%2Fprototype%2Edev%2Esh%2Ectriptravel%2Ecom%2Fcode%5Fpub%2Fcn%2Fhotels121118%2Fallyes%2Ehtml&u=http://events.ctrip.com/eventsale/218qizhugaoxingjiudian.html" target="_blank" style="position: relative; opacity: 100; display: none;"><img src="gxrz780235.jpg" width="780" height="235" border="0" alt=""></a><a href="http://allyes.ctrip.com/main/adfclick?d=ctrip&i=z2073,2511208,40216,25358&k=&p=0&v=84247421&wl=&rf=http%3A%2F%2Fprototype%2Edev%2Esh%2Ectriptravel%2Ecom%2Fcode%5Fpub%2Fcn%2Fhotels121118%2Fallyes%2Ehtml&u=http://events.ctrip.com/eventsale/JingJiXingJiuDian50YuanQi.html" target="_blank" style="position: relative; opacity: 100; display: none;"><img src="j780235.png" width="780" height="235" border="0" alt=""></a><a href="http://allyes.ctrip.com/main/adfclick?d=ctrip&i=z2074,2511573,40294,25359&k=&p=0&v=86103699&wl=&rf=http%3A%2F%2Fprototype%2Edev%2Esh%2Ectriptravel%2Ecom%2Fcode%5Fpub%2Fcn%2Fhotels121118%2Fallyes%2Ehtml&u=http://events.ctrip.com/eventsale/Vacation/427.html" target="_blank" style="position: relative; opacity: 100; display: none;"><img src="780235.jpg" width="780" height="235" border="0" alt=""></a><a style="display: none;"></a></div>
+<ul id="adpicBtn" class="pic_numlist"><li class="pic_current"></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li></ul>
+
+<script type="text/javascript">
+var isIE=/MSIE/.test(navigator.userAgent);
+function $(id){
+	return document.getElementById(id);
+}
+//显示切换广告
+window.onload=function(){
+	var picContainer=$("adpic")
+	var btnContainer=$("adpicBtn");
+	var interval=5000;
+	var step=isIE?25:5;
+	//初始化图�&#65533;
+	var linkList=[];
+	var linkListTmp=picContainer.getElementsByTagName("a");
+	for (var i=0;i<linkListTmp.length;i++){
+		linkListTmp[i].style.display="none";
+		linkList.push(linkListTmp[i]);
+	}
+	var link=document.createElement("a");
+	link.style.display="none";
+	picContainer.appendChild(link);
+	if (!linkList.length)
+		return;
+	function goAdFunc(i){
+		return function(){
+			goAd(i);
+		};
+	}
+	if (btnContainer){
+		btnContainer.innerHTML="";
+		var btnList=[];
+		for (var i=0;i<linkList.length;i++){
+			var btnTmp=document.createElement("li");
+			if (!i)
+				btnTmp.className="pic_current";
+			//btnTmp.innerHTML=i+1;
+			btnList.push(btnTmp);
+			btnContainer.appendChild(btnTmp);
+			btnTmp.onclick=goAdFunc(i);
+		}
+	}
+	var clock,running=false,current=0,next=0,target=null;
+	if (isIE){
+		picContainer.style.position="relative";
+		picContainer.style.filter="progid:DXImageTransform.Microsoft.Fade(duration=1)";
+	}
+	linkList[current].style.display="";
+	function goAd(i){
+		if (i!==null){
+			if (i==next)
+				return;
+			else
+				target=i;
+		}
+		clearTimeout(clock);
+		if (running)
+			return;
+		running=true;
+		current=next;
+		next=(next+1)%linkList.length;
+		if (target!==null)
+			next=target;
+		target=null;
+		link.parentNode.insertBefore(linkList[current],link);
+		linkList[current].style.position="relative";
+		linkList[next].style.position="absolute";
+		linkList[next].style.display="";
+		btnList[current].className="";
+		btnList[next].className="pic_current";
+		function transComplete(){
+			linkList[current].style.display="none";
+			linkList[current].style.filter="";
+			running=false;
+			clock=setTimeout(function(){
+				goAd(null);
+			},target===null?interval:200);
+		}
+		if (isIE){
+			picContainer.filters[0].apply();
+			linkList[current].style.display="none";
+			picContainer.filters[0].play();
+			transComplete();
+		}else{
+			var alpha=100;
+			var iClock=setInterval(function(){
+				alpha=Math.max(alpha-step,0);
+				linkList[current].style.opacity=alpha/100;
+				linkList[current].style.filter="progid:DXImageTransform.Microsoft.Alpha(opacity="+alpha+")";
+				if (!alpha){
+					clearInterval(iClock);
+					linkList[current].style.opacity=100;
+					transComplete();
+				}
+			},20);
+		}
+	}
+	clock=setTimeout(function(){
+		goAd(null);
+	},interval);
+};
+</script>
+
+</body></html>

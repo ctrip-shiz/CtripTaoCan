@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://prototype.dev.sh.ctriptravel.com/code_pub/cn/vacation_v2/index/index_fh.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>旅游度假首页</title>
+<style type="text/css">.calendar_wrap{width:363px;background: #fff; padding: 5px 5px 0;border: solid 1px #999;overflow: hidden;font-size:12px;font-family:tahoma,Arial,Helvetica,simsun,sans-serif;-moz-box-shadow:0 3px 5px #ccc;-webkit-box-shadow:0 3px 5px #ccc;box-shadow:0 3px 5px #ccc;}.calendar_wrap a{ color: #0053aa; text-decoration: none !important; }.calendar_wrap a:hover{text-decoration: underline;}#calendar0{width: 180px;}#calendar1{width: 182px;}.calendar_month{float: left;padding-bottom:5px;text-align: center;}.calendar_title{ height: 23px; line-height: 23px; font-weight: bold; color: #fff; background-color: #004fb8; text-align: center; }.month_prev,.month_next{ width: 23px; height: 23px; color: #fff; background: #2d7ce7 url(http://pic.c-ctrip.com/cquery/un_calender_index.png) no-repeat; cursor: pointer; }.month_prev{float: left;background-position: 0 0;}.month_next{float: right;background-position: 100% 0;}.month_prev:hover{background-color: #62adf1; background-position: 0 -26px;}.month_next:hover{background-color: #62adf1; background-position: 100% -26px;}.calendar_day{ overflow:hidden; margin: 0; padding-top:5px; }.calendar_day dd { margin: 0; padding: 0; }#calendar1 dl{border-left: 2px solid #aaa;padding-left: 5px;padding-bottom:30px;margin-bottom: -30px;}.calendar_month dt{ float: left; width: 25px; height: 22px; line-height: 20px; color: #666; background-color: #ececec; margin-bottom: 2px; }.calendar_month .weekend{font-weight: bold;color: #f90;}.calendar_day a{ float: left; width: 24px; height: 24px; line-height: 24px; margin-bottom: 1px; padding-right: 1px; font-size: 11px; font-weight: bold; color: #005ead; background-color: #fff; cursor: pointer; }.calendar_day a:hover,.calendar_day .today,.calendar_day .day_selected,.calendar_day .c_festival_select,.calendar_day .c_festival_select:hover{background: #e6f4ff url(http://pic.c-ctrip.com/cquery/un_calender_index.png) no-repeat;}.calendar_day a:hover{background-color: #e6f4ff;background-position: -26px -53px;text-decoration: none;}.calendar_day .today{background-color: #fff5d1;background-position: 0 -82px;}.calendar_day .day_over,.calendar_day .day_no{font-weight: normal;color: #dbdbdb;outline: none;cursor: default;}.calendar_day .day_over:hover,.calendar_day .day_no:hover{background: #fff;}.calendar_day .day_selected,.calendar_day .day_selected:hover{background-color: #629be0;background-position: 0 -53px;color: #fff;}.calendar_day .c_festival_select,.calendar_day .c_festival_select:hover{ background-color: #ffe6a6; background-image: url(http://pic.c-ctrip.com/cquery/un_calender_index.png); background-position: 0 -111px; }.c_yuandan span,.c_chuxi span,.c_chunjie span,.c_yuanxiao span,.c_qingming span,.c_wuyi span,.c_duanwu span,.c_zhongqiu span,.c_guoqing span,.c_jintian span{ width: 24px; height: 24px; background-image: url(http://pic.c-ctrip.com/cquery/un_festivals.png); background-repeat: no-repeat; text-indent: -9999em; overflow: hidden; display: block; }.c_yuandan span{background-position: 0 0;}.c_chuxi span{background-position: 0 -32px;}.c_chunjie span{background-position: 0 -64px;}.c_yuanxiao span{background-position: 0 -96px;}.c_qingming span{background-position: 0 -128px;}.c_wuyi span{background-position: 0 -160px;}.c_duanwu span{background-position: 0 -192px;}.c_zhongqiu span{background-position: 0 -224px;}.c_guoqing span{background-position: 0 -256px;}.c_jintian span{ background-position: 0 -288px;}.c_calender_date{ display: inline-block; color: #666; text-align: right; position: absolute; z-index: 1; }</style>
+<link href="./旅游度假首页_files/index_fh.css" rel="stylesheet" type="text/css" />
+</head><body youdao="bind" cz-shortcut-listen="true">
+
+<div id="base_bd">
+<div class="vacation_bd">
+	<div class="index_top_wrap basefix">
+		<div class="city_wrap">
+			<dl class="start_city_station">
+				<dt class="city_station_btn"><i></i>乌鲁木齐<span>站</span><b></b></dt>
+				<dt class="flt_htl_btn on"><span><i></i>机+酒<b></b></span></dt>
+				<dd class="city_searchBox" style="display:none;">
+					<div class="hot_station">
+						<h4>热门出发城市</h4>
+						<p>
+							<a href="javascript:void(0);">北京</a>
+							<a href="javascript:void(0);">上海</a>
+							<a href="javascript:void(0);">广州</a>
+							<a href="javascript:void(0);">深圳</a>
+							<a href="javascript:void(0);">南京</a>
+							<a href="javascript:void(0);">杭州</a>
+							<a href="javascript:void(0);">成都</a>
+							<a href="javascript:void(0);">厦门</a>
+							<a href="javascript:void(0);">武汉</a>
+							<a href="javascript:void(0);">青岛</a>
+							<a href="javascript:void(0);">沈阳</a>
+							<a href="javascript:void(0);">天津</a>
+							<a href="javascript:void(0);">香港</a>
+							<a href="javascript:void(0);">台北</a>
+						</p>
+					</div>
+					<ul class="station_list">
+						<li>
+							<span>B</span>
+							<a href="javascript:void(0);">包头</a>
+							<a href="javascript:void(0);">北京</a>
+						</li>
+						<li>
+							<span>C</span>
+							<a href="javascript:void(0);">长春</a>
+							<a href="javascript:void(0);">长沙</a>
+							<a href="javascript:void(0);">常州</a>
+							<a href="javascript:void(0);">成都</a>
+							<a href="javascript:void(0);">重庆</a>
+						</li>
+						<li>
+							<span>D</span>
+							<a href="javascript:void(0);">大连</a>
+							<a href="javascript:void(0);">东莞</a>
+						</li>
+						<li>
+							<span>F</span>
+							<a href="javascript:void(0);">佛山</a>
+							<a href="javascript:void(0);">福州</a>
+						</li>
+						<li>
+							<span>G</span>
+							<a href="javascript:void(0);">广州</a>
+							<a href="javascript:void(0);">贵阳</a>
+						</li>
+						<li>
+							<span>H</span>
+							<a href="javascript:void(0);">哈尔滨</a>
+							<a href="javascript:void(0);">海口</a>
+							<a href="javascript:void(0);">海拉尔</a>
+							<a href="javascript:void(0);">杭州</a>
+							<a href="javascript:void(0);">合肥</a>
+							<a href="javascript:void(0);">呼和浩特</a>
+						</li>
+						<li>
+							<span>J</span>
+							<a href="javascript:void(0);">济南</a>
+							<a href="javascript:void(0);">江门</a>
+						</li>
+						<li>
+							<span>K</span>
+							<a href="javascript:void(0);">喀什</a>
+							<a href="javascript:void(0);">昆明</a>
+						</li>
+						<li>
+							<span>L</span>
+							<a href="javascript:void(0);">拉萨</a>
+							<a href="javascript:void(0);">兰州</a>
+						</li>
+						<li>
+							<span>M</span>
+							<a href="javascript:void(0);">绵阳</a>
+						</li>
+						<li>
+							<span>N</span>
+							<a href="javascript:void(0);">南昌</a>
+							<a href="javascript:void(0);">南京</a>
+							<a href="javascript:void(0);">南宁</a>
+							<a href="javascript:void(0);">宁波</a>
+						</li>
+						<li>
+							<span>Q</span>
+							<a href="javascript:void(0);">青岛</a>
+							<a href="javascript:void(0);">泉州</a>
+						</li>
+						<li>
+							<span>S</span>
+							<a href="javascript:void(0);">三亚</a>
+							<a href="javascript:void(0);">汕头</a>
+							<a href="javascript:void(0);">上海</a>
+							<a href="javascript:void(0);">沈阳</a>
+							<a href="javascript:void(0);">深圳</a>
+							<a href="javascript:void(0);">石家庄</a>
+							<a href="javascript:void(0);">苏州</a>
+						</li>
+						<li>
+							<span>T</span>
+							<a href="javascript:void(0);">台北</a>
+							<a href="javascript:void(0);">太原</a>
+							<a href="javascript:void(0);">台州</a>
+							<a href="javascript:void(0);">天津</a>
+						</li>
+						<li>
+							<span>W</span>
+							<a href="javascript:void(0);">威海</a>
+							<a href="javascript:void(0);">温州</a>
+							<a href="javascript:void(0);">武汉</a>
+							<a href="javascript:void(0);">乌鲁木齐</a>
+							<a href="javascript:void(0);">无锡</a>
+						</li>
+						<li>
+							<span>X</span>
+							<a href="javascript:void(0);">西安</a>
+							<a href="javascript:void(0);">西昌</a>
+							<a href="javascript:void(0);">西宁</a>
+							<a href="javascript:void(0);">厦门</a>
+							<a href="javascript:void(0);">香港</a>
+							<a href="javascript:void(0);">徐州</a>
+						</li>
+						<li>
+							<span>Y</span>
+							<a href="javascript:void(0);">延吉</a>
+							<a href="javascript:void(0);">烟台</a>
+							<a href="javascript:void(0);">义乌</a>
+							<a href="javascript:void(0);">银川</a>
+							<a href="javascript:void(0);">榆林</a>
+							<a href="javascript:void(0);">运城</a>
+						</li>
+						<li>
+							<span>Z</span>
+							<a href="javascript:void(0);">郑州</a>
+							<a href="javascript:void(0);">中山</a>
+							<a href="javascript:void(0);">珠海</a>
+						</li>
+					</ul>
+				</dd>
+				<dd class="flt_htl_searchBox">
+					<form id="FHX_form" method="post">
+					<ul class="searchBox_list" id="FHX_divHotelQuery">
+						<li style="z-index:10;">
+							<span class="icon_per"></span>
+							<input type="text" name="Adults" class="adult" value="2" id="FHX_AdultSelect" readonly="readonly"/>
+							<input type="text" name="Children" class="child" value="0" id="FHX_ChildrenSelect" readonly="readonly"/>
+							<div class="person_floatlist hidden" id="FHX_AdultSelect_Options" style="top: 32px;left: 45px;">
+								<a href="javascript:;" data-value="1">1 成人</a>
+								<a href="javascript:;" data-value="2">2 成人</a>
+								<a href="javascript:;" data-value="3">3 成人</a>
+								<a href="javascript:;" data-value="4">4 成人</a>
+								<a href="javascript:;" data-value="5">5 成人</a>
+								<a href="javascript:;" data-value="6">6 成人</a>
+								<a href="javascript:;" data-value="7">7 成人</a>
+								<a href="javascript:;" data-value="8">8 成人</a>
+								<a href="javascript:;" data-value="9">9 成人</a>
+							</div>
+							<div class="person_floatlist hidden" id="FHX_ChildrenSelect_Options" style="top: 32px;left: 177px" >
+								<a href="javascript:;" data-value="0">0儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="1">1儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="2">2儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="3">3儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="4">4儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="5">5儿童(2-12岁)</a>
+								<a href="javascript:;" data-value="6">6儿童(2-12岁)</a>
+							</div>
+						</li>
+						<li>
+							<span class="icon_flt"></span>
+							<span class="icon_htl"></span>
+							<input type="text" id="FHX_txtFrom" name="FromCityName"/>
+							<input type="text" id="FHX_txtTo" name="ToCityName"/>
+							<input type="text" id="FHX_txtFromDate" name="FromTime" class="departure" readonly="readonly"/>
+							<input type="text" id="FHX_txtToDate" name="ToTime" class="comeback" readonly="readonly"/>
+						</li>
+						<li data-hotel="1">
+							<input type="text" id="city_c" autocomplete="off"/>
+							<input type="hidden" name="ToCities"/>
+							<input type="hidden" name="citypy"/>
+							<a class="move_htl_btn invisible" href="javascript:void(0);" data-index="1">删除</a>
+							<input type="text" class="h_data" autocomplete="off" name="CheckInDate" readonly="readonly"/>
+							<input type="text" class="checkout" autocomplete="off" name="CheckOutDate" readonly="readonly"/>
+						</li>
+						<li><a class="add_htl_btn" href="javascript:void(0)" id="FHX_lnkAddHotel">添加酒店</a></li>
+						<li><a class="fh_searchBox_btn" href="javascript:void(0)" id="FHX_btnSearch">搜&nbsp;索</a></li>
+					</ul>
+					<input type="hidden" name="FromCity" value="" id="FHX_hFromID" />
+					<input type="hidden" name="ToCity" value="" id="FHX_hToID" />
+					<input type="hidden" name="FromCityEName" id="FHX_hFromPY" value="" />
+					<input type="hidden" name="ToCityEName" id="FHX_hToPY" value="" />
+					</form>
+				</dd>
+			</dl>
+		</div>
+		<div class="search_wrap">
+			<input class="main_search_txt" type="text" x-webkit-speech="" x-webkit-grammar="builtin:search">
+			<a class="main_search_btn" href="javascript:void(0);"><i></i>搜&nbsp;索</a>
+			<a class="senior_search_btn" href="javascript:void(0);">高级搜索<b></b></a>
+			<div class="ie6_fix">
+				<div class="senior_search_box">
+					<h3>高级搜索</h3>
+					<ul>
+						<li>
+							<strong>关键字</strong>
+							<input type="text" class="key_word" _cqnotice="请输入目的地、主题或关键字">
+						</li>
+						<li>
+							<strong>出发日期</strong>
+							<a class="unlimited current" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<input type="text" class="time_price" _cqnotice="最早出发">
+								~
+								<input type="text" class="time_price" _cqnotice="2012-12-30">
+							</div>
+						</li>
+						<li>
+							<strong>价格范围</strong>
+							<a class="unlimited current" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<input type="text" class="time_price">
+								~
+								<input type="text" class="time_price">
+							</div>
+						</li>
+						<li>
+							<strong>类型</strong>
+							<a class="unlimited current" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<label><input type="checkbox">国内旅游</label>
+								<label><input type="checkbox">出境旅游</label>
+								<label><input type="checkbox">周边当地游</label>
+								<label><input type="checkbox">邮轮</label>
+								<label><input type="checkbox">门票/交通</label>
+								<label><input type="checkbox">签证</label>
+							</div>
+						</li>
+						<li>
+							<strong>天数</strong>
+							<a class="unlimited current" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<label><input type="checkbox">1日</label>
+								<label><input type="checkbox">2日</label>
+								<label><input type="checkbox">3日</label>
+								<label><input type="checkbox">4日</label>
+								<label><input type="checkbox">5日</label>
+								<label><input type="checkbox">6日</label>
+								<label><input type="checkbox">7-8日</label>
+								<label><input type="checkbox">9-10日</label>
+								<label><input type="checkbox">10日以上</label>
+							</div>
+						</li>
+						<li>
+							<strong>等级</strong>
+							<a class="unlimited" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<label><input type="checkbox">经济</label>
+								<label><input type="checkbox">舒适</label>
+								<label class="current"><input type="checkbox" checked="checked">豪华</label>
+								<label><input type="checkbox">超豪华</label>
+								<label><input type="checkbox">顶级</label>
+							</div>
+						</li>
+						<li>
+							<strong>交通工具</strong>
+							<a class="unlimited current" href="javascript:void(0);">不限</a>
+							<div class="select_box">
+								<label><input type="checkbox">飞机</label>
+								<label><input type="checkbox">火车</label>
+								<label><input type="checkbox">自驾</label>
+								<label><input type="checkbox">巴士</label>
+								<label><input type="checkbox">轮船</label>
+								<label><input type="checkbox">邮轮</label>	
+							</div>
+						</li>
+					</ul>
+					<a href="javascript:void(0);" class="search_btn">搜&nbsp;索</a>
+					<a href="javascript:void(0);" class="close" onclick="this.parentNode.style.display=&#39;none&#39;;">×</a>
+				</div>
+			</div>
+			<div class="visited_link">
+				<a href="javascript:void(0);">三亚</a>
+				<a href="javascript:void(0);">杭州</a>
+				<a href="javascript:void(0);">温泉</a>
+				<a href="javascript:void(0);">乐园</a>
+				<a href="javascript:void(0);">香港</a>
+				<a href="javascript:void(0);">三亚</a>
+				<a href="javascript:void(0);">杭州</a>
+				<a href="javascript:void(0);">温泉</a>
+				<a href="javascript:void(0);">乐园</a>
+				<a href="javascript:void(0);">香港</a>
+			</div>
+		</div>
+	</div>
+	<div class="basefix">
+		<div class="hot_destination">
+			<ul class="destination_detail destination_domestic">
+				<li class="title">
+					<i>·</i>
+					<h3>国内</h3>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">当季</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">北京</a>
+						<a href="javascript:void(0);" target="_blank">承德</a>
+						<a href="javascript:void(0);" target="_blank">木兰围场</a>
+						<a href="javascript:void(0);" target="_blank">西安</a>
+						<a href="javascript:void(0);" target="_blank">大连</a>
+						<a href="javascript:void(0);" target="_blank">青岛</a>
+					</div>
+				</li>
+				<li class="current">
+					<h4><a href="javascript:void(0);" target="_blank">周边</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">上海</a>
+						<a href="javascript:void(0);" target="_blank">无锡</a>
+						<a href="javascript:void(0);" target="_blank">杭州</a>
+						<a href="javascript:void(0);" target="_blank">舟山</a>
+						<a href="javascript:void(0);" target="_blank">黄山</a>
+						<a href="javascript:void(0);" target="_blank">千岛湖</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">海南</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">三亚</a>
+						<a href="javascript:void(0);" target="_blank">海口</a>
+						<a href="javascript:void(0);" target="_blank">博鳌</a>
+						<a href="javascript:void(0);" target="_blank">兴隆</a>
+						<a href="javascript:void(0);" target="_blank">文昌</a>
+						<a href="javascript:void(0);" target="_blank">七仙岭</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">云南</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">丽江</a>
+						<a href="javascript:void(0);" target="_blank">昆明</a>
+						<a href="javascript:void(0);" target="_blank">香格里拉</a>
+						<a href="javascript:void(0);" target="_blank">大理</a>
+						<a href="javascript:void(0);" target="_blank">版纳</a>
+						<a href="javascript:void(0);" target="_blank">梅里</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">福建</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">厦门</a>
+						<a href="javascript:void(0);" target="_blank">土楼</a>
+						<a href="javascript:void(0);" target="_blank">武夷山</a>
+						<a href="javascript:void(0);" target="_blank">福州</a>
+						<a href="javascript:void(0);" target="_blank">泉州</a>
+						<a href="javascript:void(0);" target="_blank">连城</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">四川</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">九寨沟</a>
+						<a href="javascript:void(0);" target="_blank">成都</a>
+						<a href="javascript:void(0);" target="_blank">峨眉乐山</a>
+						<a href="javascript:void(0);" target="_blank">海螺沟</a>
+						<a href="javascript:void(0);" target="_blank">青城山</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">广西</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">桂林</a>
+						<a href="javascript:void(0);" target="_blank">阳朔</a>
+						<a href="javascript:void(0);" target="_blank">漓江</a>
+						<a href="javascript:void(0);" target="_blank">龙脊梯田</a>
+						<a href="javascript:void(0);" target="_blank">南宁</a>
+						<a href="javascript:void(0);" target="_blank">北海</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">东|中部</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">庐山</a>
+						<a href="javascript:void(0);" target="_blank">三峡</a>
+						<a href="javascript:void(0);" target="_blank">凤凰</a>
+						<a href="javascript:void(0);" target="_blank">云台山</a>
+						<a href="javascript:void(0);" target="_blank">河南全景</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">北部</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">长白山</a>
+						<a href="javascript:void(0);" target="_blank">哈尔滨</a>
+						<a href="javascript:void(0);" target="_blank">敦煌</a>
+						<a href="javascript:void(0);" target="_blank">青海湖</a>
+						<a href="javascript:void(0);" target="_blank">沙湖</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="destination_detail destination_international">
+				<li class="title">
+					<i>·</i>
+					<h3>出境</h3>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">港澳台</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">香港</a>
+						<a href="javascript:void(0);" target="_blank">澳门</a>
+						<a href="javascript:void(0);" target="_blank">台湾</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">日本</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">东京</a>
+						<a href="javascript:void(0);" target="_blank">北海道</a>
+						<a href="javascript:void(0);" target="_blank">大阪</a>
+						<a href="javascript:void(0);" target="_blank">冲绳</a>
+						<a href="javascript:void(0);" target="_blank">九州</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">韩国</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">首尔</a>
+						<a href="javascript:void(0);" target="_blank">济州岛</a>
+						<a href="javascript:void(0);" target="_blank">釜山</a>
+						<a href="javascript:void(0);" target="_blank">江原道</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">泰国</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">普吉</a>
+						<a href="javascript:void(0);" target="_blank">曼谷</a>
+						<a href="javascript:void(0);" target="_blank">清迈</a>
+						<a href="javascript:void(0);" target="_blank">苏梅</a>
+						<a href="javascript:void(0);" target="_blank">芭堤雅</a>
+						<a href="javascript:void(0);" target="_blank">华欣</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">美国</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">夏威夷</a>
+						<a href="javascript:void(0);" target="_blank">黄石</a>
+						<a href="javascript:void(0);" target="_blank">西海岸</a>
+						<a href="javascript:void(0);" target="_blank">大瀑布</a>
+						<a href="javascript:void(0);" target="_blank">纽约</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">东南亚</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">马尔代夫</a>
+						<a href="javascript:void(0);" target="_blank">巴厘岛</a>
+						<a href="javascript:void(0);" target="_blank">新加坡</a>
+						<a href="javascript:void(0);" target="_blank">马来西亚</a>
+						<a href="javascript:void(0);" target="_blank">长滩岛</a>
+						<a href="javascript:void(0);" target="_blank">柬埔寨</a>
+						<a href="javascript:void(0);" target="_blank">越南</a>
+						<a href="javascript:void(0);" target="_blank">尼泊尔</a>
+						<a href="javascript:void(0);" target="_blank">塞班岛</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">美洲</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">加拿大</a>
+						<a href="javascript:void(0);" target="_blank">墨西哥</a>
+						<a href="javascript:void(0);" target="_blank">古巴</a>
+						<a href="javascript:void(0);" target="_blank">巴西</a>
+						<a href="javascript:void(0);" target="_blank">阿根廷</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">澳新南</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">澳大利亚</a>
+						<a href="javascript:void(0);" target="_blank">新西兰</a>
+						<a href="javascript:void(0);" target="_blank">斐济</a>
+						<a href="javascript:void(0);" target="_blank">关岛</a>
+						<a href="javascript:void(0);" target="_blank">大溪地</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">中|东非</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">埃及</a>
+						<a href="javascript:void(0);" target="_blank">迪拜</a>
+						<a href="javascript:void(0);" target="_blank">土耳其</a>
+						<a href="javascript:void(0);" target="_blank">肯尼亚</a>
+						<a href="javascript:void(0);" target="_blank">毛里求斯</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">欧洲</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">希腊</a>
+						<a href="javascript:void(0);" target="_blank">法国</a>
+						<a href="javascript:void(0);" target="_blank">英国</a>
+						<a href="javascript:void(0);" target="_blank">意大利</a>
+						<a href="javascript:void(0);" target="_blank">德国</a>
+						<a href="javascript:void(0);" target="_blank">瑞士</a>
+						<a href="javascript:void(0);" target="_blank">西班牙</a>
+						<a href="javascript:void(0);" target="_blank">俄罗斯</a>
+						<a href="javascript:void(0);" target="_blank">捷克</a>
+						<a href="javascript:void(0);" target="_blank">奥地利</a>
+						<a href="javascript:void(0);" target="_blank">冰岛</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="destination_detail destination_other">
+				<li class="title current">
+					<i>·</i>
+					<h3>邮轮</h3>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">日韩航线</a>
+						<a href="javascript:void(0);" target="_blank">加勒比海</a>
+						<a href="javascript:void(0);" target="_blank">地中海</a>
+					</div>
+				</li>
+				<li class="title">
+					<i>·</i>
+					<h3>游学</h3>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">学生游学</a>
+						<a href="javascript:void(0);" target="_blank">白领游学</a>
+						<a href="javascript:void(0);" target="_blank">亲子游学</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="hot_search">
+				<li class="title">
+					<i>·</i>
+					<h3>热门搜索</h3>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">国内</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">云南</a>
+						<a href="javascript:void(0);" target="_blank">厦门</a>
+						<a href="javascript:void(0);" target="_blank">青岛</a>
+						<a href="javascript:void(0);" target="_blank">桂林</a>
+						<a href="javascript:void(0);" target="_blank">海南</a>
+						<a href="javascript:void(0);" target="_blank">西藏</a>
+						<a href="javascript:void(0);" target="_blank">北京</a>
+						<a href="javascript:void(0);" target="_blank">杭州</a>
+						<a href="javascript:void(0);" target="_blank">丽江</a>
+						<a href="javascript:void(0);" target="_blank">上海</a>
+						<a href="javascript:void(0);" target="_blank">三亚</a>
+						<a href="javascript:void(0);" target="_blank">四川</a>
+						<a href="javascript:void(0);" target="_blank">南京</a>
+						<a href="javascript:void(0);" target="_blank">大理</a>
+						<a href="javascript:void(0);" target="_blank">大连</a>
+						<a href="javascript:void(0);" target="_blank">天津</a>
+						<a href="javascript:void(0);" target="_blank">济南</a>
+						<a href="javascript:void(0);" target="_blank">长沙</a>
+					</div>
+				</li>
+				<li>
+					<h4><a href="javascript:void(0);" target="_blank">海外</a></h4>
+					<div class="destination_link">
+						<a href="javascript:void(0);" target="_blank">泰国</a>
+						<a href="javascript:void(0);" target="_blank">法国</a>
+						<a href="javascript:void(0);" target="_blank">英国</a>
+						<a href="javascript:void(0);" target="_blank">美国</a>
+						<a href="javascript:void(0);" target="_blank">普吉岛</a>
+						<a href="javascript:void(0);" target="_blank">马尔代夫</a>
+					</div>
+				</li>
+			</ul>
+			<div class="hot_jmp" style="top:0;">
+				<ul class="hot_jmp_dest">
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">三亚</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">海口</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">标题要六个字</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank" class="orange">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">三个字</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">标题五个字</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank" class="orange">千岛湖</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">标题七个字试试</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank" class="orange">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">标题</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">四字标题</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank" class="orange">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+					<li>
+						<h4><a href="javascript:void(0);" target="_blank">八个字会不会挂啊</a></h4>
+						<div class="link_wrap">
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">上海</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+							<a href="javascript:void(0);" target="_blank">舟山</a>
+							<a href="javascript:void(0);" target="_blank">黄山</a>
+							<a href="javascript:void(0);" target="_blank">千岛湖</a>
+							<a href="javascript:void(0);" target="_blank">无锡</a>
+							<a href="javascript:void(0);" target="_blank">杭州</a>
+						</div>
+					</li>
+				</ul>
+				<div class="jmp_img_wrap">
+					<a href="javascript:void(0);" target="_blank"><img src="./旅游度假首页_files/zzz_jmp01.png" alt="" class="jmp_img"></a>
+				</div>
+			</div>
+		</div>
+		<div class="index_right">
+			<div class="banner_loop">
+				<div>
+					<a class="banner" href="javascript:;"><img width="810" height="235" src="./旅游度假首页_files/zzz_ztpic.png" alt=""></a>
+					<a class="banner" href="javascript:;" style="display:none;"><img width="810" height="235" src="./旅游度假首页_files/zzz_ztpic.png" alt=""></a>
+					<a class="banner" href="javascript:;" style="display:none;"><img width="810" height="235" src="./旅游度假首页_files/zzz_ztpic.png" alt=""></a>
+				</div>
+				<div class="loop_num">
+					<a href="javascript:;" class="current"></a>
+										<a href="javascript:;"></a>
+										<a href="javascript:;"></a>
+										<a href="javascript:;"></a>
+										<a href="javascript:;"></a>
+										<a href="javascript:;"></a>
+									</div>
+			</div>
+			<div class="announcement basefix">
+				<h3>公告：</h3>
+				<div class="content_box">
+					<p><a href="javascript:void(0);" target="_blank" title="美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易">美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易</a><span>2012-11-15</span></p>
+					<p><a href="javascript:void(0);" target="_blank">美驻沪领馆竭力方便旅游签证办理 去夏威夷玩更容易</a><span>2012-11-15</span></p>
+					<p><a href="javascript:void(0);" target="_blank">美驻沪领馆竭力方便旅游签证办理去夏威夷玩更容易美驻沪领馆竭力</a><span>2012-11-15</span></p>
+				</div>
+				<a class="more" href="javascript:void(0);" target="_blank">更多&gt;&gt;</a>
+				<b></b>
+			</div>
+			<div class="sales_promotion">
+				<h3>优惠促销</h3>
+				<ul class="sales_detail_wrap basefix">
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price price_now">实时计价</a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales zdyh"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800买一送一，提前30天预订立减800买一送一，提前30天预订立减800买一送一，提前30天预订立减800">买一送一，提前30天预订立减800买一送一，提前30天预订立减800买一送一，提前30天预订立减800买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales gbzx"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales xykzx"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales drlj"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales gbzx"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales gbzx"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales lj"></a>
+					</li>
+					<li onclick="javascript:window.open(&#39;http://vacations.ctrip.com/&#39;)">
+						<a href="javascript:;" target="_blank" title="马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房">马尔代夫柏悦哈达哈岛Park Hyatt自由行(5钻)·6日4晚 双房</a>
+						<span class="sales_slogan" title="买一送一，提前30天预订立减800">买一送一，提前30天预订立减800</span>
+						<div>
+							<a href="javascript:;" target="_blank" class="price"><dfn>￥</dfn>16695<em>起</em></a>
+							<span class="sales_icon"><i>再减</i>2800</span>
+						</div>
+						<a href="javascript:;" target="_blank" class="icon_sales xykzx"></a>
+					</li>
+				</ul>
+			</div> 
+		</div>
+	</div>
+</div>
+</div>
+<script src="http://webresource.c-ctrip.com/code/cquery/LABjs/LAB.js" charset="utf-8" type="text/javascript"></script>
+	<script type="text/javascript" language="javascript">
+ 	var $globalPad = true; //support ctrip on pad
+	var $isPad = /pad/.test(navigator.userAgent.toLowerCase()); 
+	$LAB
+		.script({ src: 'http://webresource.c-ctrip.com/code/cquery/cQuery_110421.js', charset: 'utf-8' }).wait()
+		.padScript({ src: "http://webresource.c-ctrip.com/code/cquery/pad.js", charset: "utf-8" }).wait()
+		.script({ src: 'FHX_search.js', charset: 'utf-8'});
+		
+	FHXConfig = {
+            URL: {
+                FREE_COMBINE: 'http://vacations.ctrip.com/DIY/freesearchlist.aspx',
+                SINGLE_FLT_HOTEL: 'http://vacations.ctrip.com/DIY/$1-$2$3-$4$5'
+            },
+            placeholder: ['yyyy-mm-dd', '中文/拼音/英文', '酒店名称', '选择商业区或行政区'],
+            validate: [
+                "请选择出发日期",
+                "请选择返回日期",
+                "请选择入住日期",
+                "请选择离开日期",
+                "日期不符合格式规范或无效的日期",
+                "您选择的返回日期早于/等于出发日期，请重新选择",
+                "您选择的离店日期早于/等于入住日期，请重新选择",
+                "最大行程不能超过28天，请分订单提交预订",
+                "请选择出发城市",
+                "请选择到达城市",
+                "请选择入住城市",
+                "入住日期最早只能出发日期前一天",
+                "离开日期最晚只能返回日期后一天",
+                "出发城市不能与到达城市相同"
+            ],
+			hotelTemplate: '\
+				<li data-hotel="1">\
+					<input type="text" id="city_c" autocomplete="off" value="${to}"/>\
+					<input type="hidden" name="ToCities" value="${toid}"/>\
+					<input type="hidden" name="citypy"/>\
+					<a class="move_htl_btn" href="javascript:void(0);"  data-index="${count}">删除</a>\
+					<input type="text" class="h_data" autocomplete="off" name="CheckInDate" readonly="readonly"/>\
+					<input type="text" class="checkout" autocomplete="off" name="CheckOutDate" readonly="readonly"/>\
+				</li>',
+            address: {
+                message: {
+                    suggestion: '热门城市（可直接选择城市或输入城市全拼/简拼）',
+                    filterResult: '${val}，按字符顺序排序',
+                    noFilterResult: ' 对不起，无匹配，请重新输入。',
+                    sort: ["", "", "", "", "", "", "", "", "", "\"${val}\" 国家名，相关城市"]
+                },
+                suggestion: [
+                    '<div class="c_address_box2 hot_city">\
+                        <div class="c_address_hd">${message.suggestion}</div>\
+                        <div class="c_address_bd">\
+                            {{enum(key,arr) data}}\
+                                <ul class="c_address_ul layoutfix">\
+                                {{each arr}}\
+                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>\
+                                {{/each}}\
+                                </ul>\
+                            {{/enum}}\
+                        </div>\
+                    </div>',
+                    '<div class="c_address_box2 hot_city world">\
+                        <div class="c_address_hd">${message.suggestion}</div>\
+                        <div class="c_address_bd">\
+                            {{enum(key,arr) data}}\
+                                <ul class="c_address_ul layoutfix {{if key=="国内" }}c_address_ul_no{{/if}}">\
+                                <li class="tit"><strong>${key}</strong></li>\
+                                {{each arr}}\
+                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>\
+                                {{/each}}\
+                                </ul>\
+                            {{/enum}}\
+                        </div>\
+                    </div>'],
+				suggestionIpad: [
+                    '<div class="c_address_box c_address_box2 hot_city hot_city_pad">\
+                        <div class="c_address_hd">${message.suggestion}</div>\
+                        <div class="c_address_bd">\
+                            {{enum(key,arr) $data.data}}\
+                                <ul class="c_address_ul layoutfix">\
+                                {{each arr}}\
+                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>\
+                                {{/each}}\
+                                </ul>\
+                            {{/enum}}\
+                        </div>\
+						<a href="javascript:void(0)" class="ico_key" id="mini_c_address_keyboard">Keyboard</a>\
+						<a href="javascript:void(0)" class="address_close" id="mini_c_address_close">close</a>\
+                    </div>',
+                    '<div class="c_address_box c_address_box2 hot_city hot_city_pad world">\
+                        <div class="c_address_hd">${message.suggestion}</div>\
+                        <div class="c_address_bd">\
+                            {{enum(key,arr) $data.data}}\
+                                <ul class="c_address_ul layoutfix {{if key=="国内" }}c_address_ul_no{{/if}}">\
+                                <li class="tit"><strong>${key}</strong></li>\
+                                {{each arr}}\
+                                    <li><a data="${data}" href="javascript:void(0);">${display}</a></li>\
+                                {{/each}}\
+                                </ul>\
+                            {{/enum}}\
+                        </div>\
+						<a href="javascript:void(0)" class="ico_key" id="mini_c_address_keyboard">Keyboard</a>\
+						<a href="javascript:void(0)" class="address_close" id="mini_c_address_close">close</a>\
+                    </div>'],
+                 suggestionStyle: '\
+					.ico_key,.ico_unkey{position: absolute;top: 1px;left: 1px;width: 34px;height: 24px;overflow: hidden;line-height: 999em;font-size: 0;background: url(http://pic.c-ctrip.com/ctripOnPad/ico_key.png) no-repeat 0 0;-webkit-transform: scale(.7);}\
+					.address_close{position: absolute;top: 3px;right: 4px;width: 18px;height: 19px;overflow: hidden;line-height: 999em;font-size: 0;content: "";text-indent: 99em;background: url(http://pic.c-ctrip.com/ctripOnPad/pad_address_icon.png) no-repeat -32px 0;-webkit-transform: scale(0.5);}\
+					.ico_unkey{background: url(http://pic.c-ctrip.com/ctripOnPad/ico_unkey.png) no-repeat 0 0;}\
+                    .c_address_box { background-color: #fff; font-size: 12px; width: 384px; }\
+                    .c_address_box a { text-decoration: none; }\
+                    .c_address_box2 { background-color: #fff; font-size: 12px; width: 384px; }\
+                    .c_address_box2 a { text-decoration: none; }\
+                    .c_address_hd {dispaly:none; height: 24px; border-color: #add9f4; border-style: solid; border-width: 1px 1px 0; background-color: #67A1E2; color: #fff; line-height: 24px; padding-left: 10px; }\
+                    .c_address_hd .hd_tips{ color:#cee3fc;}\
+                    .c_address_bd { border:#add9f4 1px solid; overflow: hidden; padding:10px; }\
+                    .c_address_ol { margin:0; padding:0 0 20px; border-bottom: 1px solid #5DA9E2; }\
+                    .c_address_ol li { color: #005DAA; cursor: pointer; float: left; height: 20px; line-height: 20px; list-style-type: none; text-align: center; }\
+                    .c_address_ol li span { padding:0 8px; }\
+                    .c_address_ol li .hot_selected { display:block; padding:0 5px; background-color: #FFFFFF; border-color: #5DA9E2; border-style: solid; border-width: 1px 1px 0; color: #000000; font-weight: bold; }\
+                    .c_address_ul { margin:0; padding: 4px 0 0; }\
+                    .c_address_ul li { float: left; height: 24px; overflow: hidden; width: 72px; }\
+                    .c_address_ul li a { display: block; height: 22px;  border: 1px solid #FFFFFF; color: #1148A8; line-height: 22px; padding:0 5px; }\
+                    .c_address_ul li a:hover { background-color: #E8F4FF; border: 1px solid #ACCCEF; text-decoration: none; }\
+                    .hot_city{ width:300px;}\
+					.hot_city_pad{ width:425px;}\
+					.c_address_hd{ text-align:center}\
+                    .hot_city .c_address_bd{ padding:6px 0;}\
+                    .hot_city_pad .c_address_bd{ padding:10px;}\
+                    .hot_city li { width:50px;}\
+                    .world{ width:348px;}\
+                    .world .c_address_ul { padding:4px 0 4px 50px; position:relative; border-top:#ccc 1px dotted;}\
+                    .world .c_address_ul_no{ border-top:0 none}\
+                    .world .tit{ position:relative; margin:0 0 0 -38px; width:38px; line-height:24px; _display:inline;}',
+                filter: '\
+                    <div class="c_address_select">\
+                        <div class="c_address_wrap">\
+                            <div class="c_address_hd">{{if hasResult}}{{tmpl message.filterResult}}{{else}}{{tmpl message.noFilterResult}}{{/if}}</div>\
+                            <div class="c_address_list" style="">\
+                                {{each (i,item) list}}\
+                                    {{if cQuery.type(item)=="string"}}\
+                                        <label>${item}</label>\
+                                    {{else}}\
+                                        <a href="javascript:void(0);" data="${data}" style="display: block;">${left}<span>${right}</span></a>\
+                                    {{/if}}\
+                                {{/each}}\
+                            </div>\
+                            {{if page.max>-1}}\
+                                <div class="c_address_pagebreak" style="display: block;">\
+                                    {{if page.current>0}}\
+                                        <a href="javascript:void(0);" page="${page.current-1}">&lt;-</a>\
+                                    {{/if}}\
+                                    {{if page.current<2}}\
+                                        {{loop(index) Math.min(5,page.max+1)}}\
+                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>\
+                                        {{/loop}}\
+                                    {{else page.current>page.max-2}}\
+                                        {{loop(index) Math.max(0,page.max-4),page.max+1}}\
+                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>\
+                                        {{/loop}}\
+                                    {{else}}\
+                                        {{loop(index) Math.max(0,page.current-2),Math.min(page.current+3,page.max+1)}}\
+                                            <a href="javascript:void(0);"{{if page.current==index}} class="address_current"{{/if}} page="${index}">${index+1}</a>\
+                                        {{/loop}}\
+                                    {{/if}}\
+                                    {{if page.current<page.max}}\
+                                        <a href="javascript:void(0);" page="${page.current+1}">-&gt;</a>\
+                                    {{/if}}\
+                                </div>\
+                            {{/if}}\
+                        </div>\
+                    </div>',
+                filterStyle: '\
+                    .c_address_wrap { width: 220px; min-height: 305px; margin: 0; padding: 0 0 4px; border: 1px solid #add9f4; background:#fff; text-align: left; }\
+                    .c_address_select .c_address_list { margin: 0; min-height: 277px; padding: 0; }\
+                    .c_address_select .c_address_list span { font:10px/1. verdana; color:#bbb; display:block; margin: 0; overflow: hidden; padding: 0; white-space: nowrap; text-transform:uppercase }\
+                    .c_address_select .c_address_list a { border-bottom: 1px solid #FFFFFF; border-top: 1px solid #FFFFFF; color: #0055AA; cursor: pointer; display: block; overflow: hidden;padding:3px 8px; text-align: left; text-decoration: none; }\
+                    .c_address_select .c_address_list a:hover,\
+                    .c_address_select .c_address_list a.hover { background:#e8f4ff; border-bottom: 1px solid #acccef; border-top: 1px solid #acccef; }\
+                    .c_address_select .c_address_pagebreak { display: none; line-height: 25px; margin: 0; padding: 0; text-align: center; }\
+                    .c_address_select .c_address_pagebreak a { color: #0055AA; display: inline-block; font-family: Arial, Simsun, sans-serif; font-size: 14px; margin: 0; padding: 0 4px; text-align: center; text-decoration: underline; width: 15px; }\
+                    .c_address_select #c_address_arrowl, .c_address_select #c_address_arrowr { color: #0055AA; }\
+                    .c_address_select a.address_current { color: #000; text-decoration: none; }',
+				hotelFilter: '\
+                    {{if hasResult}}\
+                    <div class="city_suggestion_pop">\
+                        <p class="title">{{if hasResult}}{{tmpl message.filterResult}}{{/if}}</p>\
+                        <div class="sug_item">\
+                            {{each (i,item) list}}\
+                                {{if cQuery.type(item)=="string"}}\
+                                    <a>${item}</a>\
+                                {{else}}\
+                                    <a href="javascript:void(0);" data="${data}" title="${right}(${left})">\
+                                        <span class="city">\
+                                            <span class="cn">${right}</span>\
+                                            <span class="en">${left}</span>\
+                                        </span>\
+                                    </a>\
+                                {{/if}}\
+                            {{/each}}\
+                        </div>\
+                    </div>\
+                    {{/if}}',
+                hotelFilterStyle: ' .city_suggestion_pop { width:446px; border:1px solid #ccc; background-color:#fff; } .city_suggestion_pop .title { height:26px; margin:0 10px 4px; padding:0 2px; border-bottom:1px dotted #ccc; line-height:26px; color:#999; } .city_suggestion_pop .close { float:right; width:26px; height:26px; font:bold 14px/26px Simsun; color:#666; text-align:center; } .city_suggestion_pop .text_input { float:left; max-width:210px; _width:210px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; } .city_suggestion_pop .close:hover { text-decoration:none; color:#FFA800; } .city_suggestion_pop .sug_item a { display:block; padding:0 10px; color:#000; font-family:Tahoma; line-height:28px; cursor:pointer; } .city_suggestion_pop .sug_item .num { float:right; color:#999; } .city_suggestion_pop .sug_item .city { display:block; width:350px; max-height:56px; _height:28px; padding-right:4px; overflow:hidden; } .city_suggestion_pop .sug_item .en { color:#999; } .city_suggestion_pop .sug_item b { font-weight:bold; color:#06c; } .city_suggestion_pop .sug_item a:hover,  .city_suggestion_pop .sug_item .hover { background-color:#06c; color:#fff; text-decoration:none; } .city_suggestion_pop .sug_item a:hover span,  .city_suggestion_pop .sug_item .hover span,  .city_suggestion_pop .sug_item a:hover b,  .city_suggestion_pop .sug_item .hover b { color:#fff; }'
+            },
+			defaultDepart: '上海',
+			START_CITY: {
+                1: "北京", 2: "上海", 32: "广州", 30: "深圳", 17: "杭州", 28: "成都", 12: "南京", 7: "青岛",
+                25: "厦门", 477: "武汉", 451: "沈阳", 144: "济南", 375: "宁波", 13: "无锡", 491: "温州", 3: "天津", 4: "重庆",
+                10: "西安", 559: "郑州", 258: "福州", 34: "昆明", 206: "长沙", 6: "大连", 38: "贵阳", 39: "乌鲁木齐",
+                100: "兰州", 103: "呼和浩特", 105: "太原", 158: "长春", 278: "合肥", 376: "南昌", 380: "南宁",
+                5: "哈尔滨", 31: "珠海", 41: "拉萨", 42: "海口", 99: "银川", 109: "喀什", 124: "西宁", 140: "运城",
+                141: "包头", 142: "海拉尔", 213: "常州", 370: "绵阳", 406: "泉州", 43: "三亚", 428: "石家庄",
+                447: "汕头", 479: "威海", 494: "西昌", 512: "徐州", 523: "延吉", 527: "榆林", 533: "烟台",
+                536: "义乌", 578: "台州", 553: "中山", 14: "苏州", 223: "东莞", 316: "江门", 251: "佛山"
+            }
+        }
+		
+</script>
+</body></html>
